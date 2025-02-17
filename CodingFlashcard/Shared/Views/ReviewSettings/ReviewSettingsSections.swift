@@ -1,0 +1,47 @@
+//
+//  FlashcardReviewSettingsView.swift
+//  CodingFlashcard
+//
+//  Created by Tammy Ho.
+//
+
+import SwiftUI
+
+struct ReviewSettingsSections: View {
+    @Binding var showSelectDeckView: Bool
+    @Binding var reviewSettings: ReviewSettings
+    
+    let clearSelectedFlashcardIDs: () -> Void
+    
+    var body: some View {
+        Section {
+            FlashcardModePicker(
+                selectedFlashcardMode: $reviewSettings.selectedFlashcardMode,
+                showCustomSelectionView: $showSelectDeckView,
+                clearSelectedFlashcardIDs: clearSelectedFlashcardIDs
+            )
+        } header: {
+            Text("Select Flashcards")
+                .applyListSectionStyle()
+        }
+        .listRowSeparator(.hidden)
+        .listSectionSeparator(.hidden)
+        
+        Section {
+            ReviewSettingsSection(reviewSettings: $reviewSettings)
+        } header: {
+            Text("Settings")
+                .applyListSectionStyle()
+        }
+        .listRowSeparator(.hidden)
+    }
+}
+
+#if DEBUG
+#Preview {
+    List {
+        ReviewSettingsSections(showSelectDeckView: .constant(false), reviewSettings: .constant(ReviewSettings()), clearSelectedFlashcardIDs: {})
+    }
+    .listStyle(.inset)
+}
+#endif
