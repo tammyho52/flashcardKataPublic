@@ -46,6 +46,6 @@ To get started with this project, please follow these steps:
   
 3. Add the GIDClientID Key to Info.plist: Add the following key-value pair to the Info.plist file. `<key>GIDClientID</key> <string>YOUR_CLIENT_ID</string>` (Replace YOUR_CLIENT_ID with the client_id value from your GoogleService-Info.plist file.)
 
-5. Set up Firebase Authentication: In your Firebase Console, enable the required authentication methods: Email/Password Authentication, Google Authentication, and Apple Authentication.
+4. Set up Firebase Authentication: In your Firebase Console, enable the required authentication methods: Email/Password Authentication, Google Authentication, and Apple Authentication.
   
-6. Provisioning Profile Setup: Ensure that your app’s provisioning profile includes the following capabilities: Push Notifications, Sign In with Apple.
+5. Provisioning Profile Setup: Ensure that your app’s provisioning profile includes the following capabilities: Push Notifications, Sign In with Apple.
