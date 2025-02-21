@@ -36,7 +36,7 @@ You can download the app [here](https://apps.apple.com/us/app/flashcard-kata/id6
 - Implemented a design system for consistent styling throughout the app, including color palettes, button style, iconography, etc.
 - Created wireframes by hand to plan the app's layout and flow, then used Figma to design app assets.
 - Architecture: MVVM with Managers (Database, Authentication), Services (Firestore), and Helpers for better separation of concerns and maintainability.
-- Frontend UI, consisting of 25+ screens and 20+ reusable components, is built with SwiftUI & UIKit
+- Frontend UI, consisting of 25+ screens and 20+ reusable components, is built with SwiftUI & UIKit.
 - Authentication (password, Apple, Google) is implemented using Firebase Authentication, accessed via the Firebase iOS SDK.
 - Backend data is stored in a Firebase Firestore database, accessed using the Firebase iOS SDK.
 - Network requests are sent using URLRequest and called with Swift Concurrency.
