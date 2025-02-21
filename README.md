@@ -14,8 +14,9 @@
   <img src="https://github.com/tammyho52/flashcardKataImages/blob/24b2827a2c31daed8731047eea97670683bba15a/05.png" width="150px" height="auto" style="border-radius: 15px;">
 </div>
 
-[Watch Video of Read Tab functionality](https://youtu.be/4bl6CohKzxk)
-[Watch Video of Review Tab functionality](https://youtu.be/3dfcb6wLR2E)
+[Youtube: Watch Video of Read Tab functionality here](https://youtu.be/4bl6CohKzxk)
+
+[Youtube: Watch Video of Review Tab functionality here](https://youtu.be/3dfcb6wLR2E)
 
 ## Overview
 
