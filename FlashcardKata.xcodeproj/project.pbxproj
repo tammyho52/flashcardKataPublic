@@ -1,0 +1,2480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		290190C62BD70F9B003BA6A0 /* DecksStudiedChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290190C52BD70F9B003BA6A0 /* DecksStudiedChart.swift */; };
+		2902E6C42C8AB616004E2B11 /* CardSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2902E6C32C8AB616004E2B11 /* CardSort.swift */; };
+		2902E6C62C8AB7D3004E2B11 /* ReadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2902E6C52C8AB7D3004E2B11 /* ReadViewModel.swift */; };
+		290DB6D32C9AB9B100DB4869 /* ReviewViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290DB6D22C9AB9B100DB4869 /* ReviewViewState.swift */; };
+		290DB6D52C9ABBA200DB4869 /* GeneralScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290DB6D42C9ABBA200DB4869 /* GeneralScoreView.swift */; };
+		290DB6DB2C9AC1CC00DB4869 /* ScoreBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290DB6DA2C9AC1CC00DB4869 /* ScoreBarView.swift */; };
+		290E14A42C3336C300C9F1A1 /* ReadScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E14A32C3336C300C9F1A1 /* ReadScreen.swift */; };
+		290E14A82C33732F00C9F1A1 /* FlashcardCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E14A72C33732F00C9F1A1 /* FlashcardCardView.swift */; };
+		290E14AE2C33D46A00C9F1A1 /* FlashcardTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E14AD2C33D46A00C9F1A1 /* FlashcardTagView.swift */; };
+		290E14B02C33EDEC00C9F1A1 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E14AF2C33EDEC00C9F1A1 /* FlowLayout.swift */; };
+		291190302C8BAB520087B6D6 /* FlashcardReadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2911902F2C8BAB520087B6D6 /* FlashcardReadingView.swift */; };
+		2918BE5D2BAB9EE800EA61B6 /* EditFlashcardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2918BE5C2BAB9EE800EA61B6 /* EditFlashcardScreen.swift */; };
+		291F8D072B98791500145AD0 /* AddDeckScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291F8D062B98791500145AD0 /* AddDeckScreen.swift */; };
+		291F8D0B2B995D7C00145AD0 /* FlashcardListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291F8D0A2B995D7C00145AD0 /* FlashcardListScreen.swift */; };
+		291F8D0F2B996FBB00145AD0 /* AddFlashcardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291F8D0E2B996FBB00145AD0 /* AddFlashcardScreen.swift */; };
+		2922104B2C1CFC27003FA3FF /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2922104A2C1CFC27003FA3FF /* Font+Extensions.swift */; };
+		2922104D2C1CFD04003FA3FF /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2922104C2C1CFD04003FA3FF /* View+Extensions.swift */; };
+		292439ED2CE30EEB00A603C0 /* FlashcardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292439EC2CE30EEB00A603C0 /* FlashcardService.swift */; };
+		292439EF2CE357D800A603C0 /* GroupByID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292439EE2CE357D800A603C0 /* GroupByID.swift */; };
+		292439F12CE56DE500A603C0 /* FirestoreUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292439F02CE56DE500A603C0 /* FirestoreUpdate.swift */; };
+		292439F52CE5746700A603C0 /* FirestoreCollectionPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292439F42CE5746700A603C0 /* FirestoreCollectionPath.swift */; };
+		29288C602C34DA820097A13B /* ViewSizeKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29288C5F2C34DA820097A13B /* ViewSizeKey.swift */; };
+		29288C622C350D8A0097A13B /* ReadSettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29288C612C350D8A0097A13B /* ReadSettingsScreen.swift */; };
+		29288C6A2C3521A90097A13B /* TrackerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29288C692C3521A90097A13B /* TrackerScreen.swift */; };
+		2928CEF42CDB651400B69AA0 /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2928CEF32CDB651400B69AA0 /* FirestoreService.swift */; };
+		292EC93D2C23D60900400E6A /* AddSubDecksDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292EC93C2C23D60900400E6A /* AddSubDecksDisplay.swift */; };
+		292EC93F2C23D69700400E6A /* AddDecksDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292EC93E2C23D69700400E6A /* AddDecksDisplay.swift */; };
+		292EC9472C240DF500400E6A /* CoverShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292EC9462C240DF500400E6A /* CoverShadow.swift */; };
+		292EC9492C24B27400400E6A /* DefaultEmptyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292EC9482C24B27400400E6A /* DefaultEmptyScreen.swift */; };
+		2930A4C42C0A8E9B003E4101 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2930A4C32C0A8E9B003E4101 /* Images.xcassets */; };
+		2930A4C92C0D3064003E4101 /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2930A4C82C0D3064003E4101 /* Flashcard.swift */; };
+		2939290C2BC6257400A9AB1F /* DraggableFlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2939290B2BC6257400A9AB1F /* DraggableFlashcardView.swift */; };
+		29563F6C2C487F800085F19F /* ReviewProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29563F6B2C487F800085F19F /* ReviewProgressBar.swift */; };
+		29563F722C48A24C0085F19F /* StreakCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29563F712C48A24C0085F19F /* StreakCountView.swift */; };
+		29563F7C2C48C8DB0085F19F /* ScoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29563F7B2C48C8DB0085F19F /* ScoreType.swift */; };
+		29563F7E2C48CF4E0085F19F /* ReviewSessionMetricsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29563F7D2C48CF4E0085F19F /* ReviewSessionMetricsScreen.swift */; };
+		29563F802C4904960085F19F /* ScoreSummaryBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29563F7F2C4904960085F19F /* ScoreSummaryBox.swift */; };
+		29563F842C49D6720085F19F /* MetricCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29563F832C49D6720085F19F /* MetricCard.swift */; };
+		29563F882C4A27B10085F19F /* SelectionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29563F872C4A27B10085F19F /* SelectionState.swift */; };
+		29563F8A2C4A27D40085F19F /* ExpansionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29563F892C4A27D40085F19F /* ExpansionState.swift */; };
+		29563F8E2C4A28EB0085F19F /* HeaderExpansionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29563F8D2C4A28EB0085F19F /* HeaderExpansionButton.swift */; };
+		29563F942C4C73DD0085F19F /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29563F932C4C73DD0085F19F /* Deck.swift */; };
+		29563F962C4C75B10085F19F /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29563F952C4C75B10085F19F /* DatabaseManager.swift */; };
+		2960F4382C3F94AB00D494A7 /* ReviewModeTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960F4372C3F94AB00D494A7 /* ReviewModeTile.swift */; };
+		2960F43C2C3F9B5D00D494A7 /* ReviewSettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960F43B2C3F9B5D00D494A7 /* ReviewSettingsSection.swift */; };
+		2960F4442C3F9DF400D494A7 /* FlashcardModePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960F4432C3F9DF400D494A7 /* FlashcardModePicker.swift */; };
+		2965F69B2C5D6C5B006C9DDB /* FlashcardUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2965F69A2C5D6C5B006C9DDB /* FlashcardUpdate.swift */; };
+		2965F69D2C5D6CE5006C9DDB /* DeckUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2965F69C2C5D6CE5006C9DDB /* DeckUpdate.swift */; };
+		2965F6A92C63FBC1006C9DDB /* DatabaseManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2965F6A82C63FBC1006C9DDB /* DatabaseManagerError.swift */; };
+		296603EE2C98EE3E00CC0C5B /* SelectAllHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296603ED2C98EE3E00CC0C5B /* SelectAllHelper.swift */; };
+		296603F02C98FB1800CC0C5B /* ExpandAllHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296603EF2C98FB1800CC0C5B /* ExpandAllHelper.swift */; };
+		29703B842BA912C2002D0094 /* EditDeckScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29703B832BA912C2002D0094 /* EditDeckScreen.swift */; };
+		2971F20D2C90FDA40052BA10 /* DeckWithSubdecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2971F20C2C90FDA40052BA10 /* DeckWithSubdecks.swift */; };
+		2973DBA52C2BC81300EE37F7 /* DeckFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2973DBA42C2BC81300EE37F7 /* DeckFormView.swift */; };
+		2973DBA72C2CB76600EE37F7 /* TextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2973DBA62C2CB76600EE37F7 /* TextFieldStyle.swift */; };
+		2973DBA92C2DDDC200EE37F7 /* SearchResultsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2973DBA82C2DDDC200EE37F7 /* SearchResultsScreen.swift */; };
+		2973DBB02C2E40B500EE37F7 /* ReviewSessionSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2973DBAF2C2E40B500EE37F7 /* ReviewSessionSummary.swift */; };
+		2973DBB22C2E413100EE37F7 /* DifficultyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2973DBB12C2E413100EE37F7 /* DifficultyLevel.swift */; };
+		297622DC2C8FC7DB007FBF63 /* FullScreenProgressScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297622DB2C8FC7DB007FBF63 /* FullScreenProgressScreen.swift */; };
+		2978A5E62C6D4A590046F822 /* FlashcardFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2978A5E52C6D4A590046F822 /* FlashcardFormView.swift */; };
+		297925CE2C8B927900B1E88B /* DeckNameLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297925CD2C8B927900B1E88B /* DeckNameLabel.swift */; };
+		297925D02C8BA0AC00B1E88B /* FlashcardDisplayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297925CF2C8BA0AC00B1E88B /* FlashcardDisplayModel.swift */; };
+		297F21E32CDC83910099B5FB /* FirestoreQueryPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F21E22CDC83910099B5FB /* FirestoreQueryPredicate.swift */; };
+		297F21E52CDE9E110099B5FB /* DeckService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F21E42CDE9E110099B5FB /* DeckService.swift */; };
+		2987A3F42C2B79240091D8CD /* BadgeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2987A3F32C2B79240091D8CD /* BadgeLabel.swift */; };
+		29920BA52C74027800A873D8 /* IDUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29920BA42C74027800A873D8 /* IDUpdate.swift */; };
+		299364172C66F10000C5EE5B /* DeckDisclosureGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299364162C66F10000C5EE5B /* DeckDisclosureGroupView.swift */; };
+		299364192C6A814500C5EE5B /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299364182C6A814500C5EE5B /* Date+Extensions.swift */; };
+		299436152BA42943008D7C4F /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299436142BA42943008D7C4F /* TimerView.swift */; };
+		29A7BDED2BC4C1D70080A239 /* ScoreTransitionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A7BDEC2BC4C1D70080A239 /* ScoreTransitionScreen.swift */; };
+		29B0F77A2C3F0C2C00F30CC5 /* GlobalNavigationBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B0F7792C3F0C2C00F30CC5 /* GlobalNavigationBarStyle.swift */; };
+		29B5B9502C34984F00A7883D /* FlashcardTagFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B5B94F2C34984F00A7883D /* FlashcardTagFactory.swift */; };
+		29B5B9522C349AAA00A7883D /* FlashcardTagsDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B5B9512C349AAA00A7883D /* FlashcardTagsDisplay.swift */; };
+		29BA9A192C35DBCD009C5874 /* FlashcardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BA9A182C35DBCD009C5874 /* FlashcardLayout.swift */; };
+		29BA9A212C3CA030009C5874 /* ToolbarNextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BA9A202C3CA030009C5874 /* ToolbarNextButton.swift */; };
+		29C211442C93A300004A7848 /* DeckWithFlashcards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C211432C93A300004A7848 /* DeckWithFlashcards.swift */; };
+		29C38A042C22872200BB44B8 /* DesignConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C38A032C22872200BB44B8 /* DesignConstants.swift */; };
+		29C38A062C22874400BB44B8 /* ContentConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C38A052C22874400BB44B8 /* ContentConstants.swift */; };
+		29C38A0D2C22A85200BB44B8 /* ToolbarBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C38A0C2C22A85200BB44B8 /* ToolbarBackButton.swift */; };
+		29CCB0742BA3222D009034E7 /* ReviewSessionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CCB0732BA3222D009034E7 /* ReviewSessionScreen.swift */; };
+		29CDE7482B9ADAA3009C25FB /* TrackerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CDE7472B9ADAA3009C25FB /* TrackerViewModel.swift */; };
+		29CEE0A62B97DB4F0007E152 /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29CEE0A52B97DB4F0007E152 /* AppIcon.xcassets */; };
+		29CEE0B02B97EEBC0007E152 /* DecksListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CEE0AF2B97EEBC0007E152 /* DecksListScreen.swift */; };
+		29CEE0B22B97EED10007E152 /* ReviewOverviewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CEE0B12B97EED10007E152 /* ReviewOverviewScreen.swift */; };
+		29CEE0B42B97EEE00007E152 /* TrackerSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CEE0B32B97EEE00007E152 /* TrackerSummaryView.swift */; };
+		29CEE0B62B97EEEC0007E152 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CEE0B52B97EEEC0007E152 /* SettingsScreen.swift */; };
+		29D2BA742C6FDCCA0003F6BC /* DebouncerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D2BA732C6FDCCA0003F6BC /* DebouncerService.swift */; };
+		29D3FFA72C322A32005A051D /* FlashcardMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D3FFA62C322A32005A051D /* FlashcardMode.swift */; };
+		29D3FFA92C322AC7005A051D /* ReviewSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D3FFA82C322AC7005A051D /* ReviewSettings.swift */; };
+		29D3FFAB2C32326B005A051D /* CheckboxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D3FFAA2C32326B005A051D /* CheckboxButton.swift */; };
+		29D3FFAF2C3260FC005A051D /* ReadingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D3FFAE2C3260FC005A051D /* ReadingListView.swift */; };
+		29E0CA642BB77A5F002E08C6 /* FlashcardCardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E0CA632BB77A5F002E08C6 /* FlashcardCardScreen.swift */; };
+		29E0D7F02C2A2AE300B2A5DF /* ReviewMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E0D7EF2C2A2AE300B2A5DF /* ReviewMode.swift */; };
+		29E0D7F22C2A407200B2A5DF /* LabeledBodyText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E0D7F12C2A407200B2A5DF /* LabeledBodyText.swift */; };
+		29E47D192C46F3C700698AD9 /* HeaderSelectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E47D182C46F3C700698AD9 /* HeaderSelectionButton.swift */; };
+		29E47D1B2C46F49C00698AD9 /* CheckmarkSelectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E47D1A2C46F49C00698AD9 /* CheckmarkSelectionButton.swift */; };
+		29E47D1D2C46F59700698AD9 /* SectionHeaderTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E47D1C2C46F59700698AD9 /* SectionHeaderTitle.swift */; };
+		F30227662D597A760014675C /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30227652D597A760014675C /* UserProfile.swift */; };
+		F30227682D59866F0014675C /* ReviewSessionSummaryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30227672D59866F0014675C /* ReviewSessionSummaryService.swift */; };
+		F302276A2D5A13570014675C /* UserProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30227692D5A13570014675C /* UserProfileService.swift */; };
+		F3032DB32D5056F2007FD7E2 /* ReviewSettingsSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3032DB22D5056F2007FD7E2 /* ReviewSettingsSections.swift */; };
+		F3032DBA2D5064E6007FD7E2 /* ReviewSettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3032DB92D5064E6007FD7E2 /* ReviewSettingsScreen.swift */; };
+		F3032DBE2D509768007FD7E2 /* ReviewSelectDecksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3032DBD2D509768007FD7E2 /* ReviewSelectDecksView.swift */; };
+		F3032DC02D5098D5007FD7E2 /* ReviewSelectFlashcardsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3032DBF2D5098D5007FD7E2 /* ReviewSelectFlashcardsScreen.swift */; };
+		F308A8DC2D5D5F640092BFFB /* GuestDefaultScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F308A8DB2D5D5F640092BFFB /* GuestDefaultScreen.swift */; };
+		F308A8DE2D5D628E0092BFFB /* DefaultViewPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F308A8DD2D5D628E0092BFFB /* DefaultViewPrimaryButton.swift */; };
+		F308A8E02D5D646A0092BFFB /* DefaultViewInlineImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F308A8DF2D5D646A0092BFFB /* DefaultViewInlineImage.swift */; };
+		F30A8FF12D58098E00C0E6BA /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2978A5E12C6BD5060046F822 /* MockData.swift */; };
+		F30A8FF22D58099300C0E6BA /* Deck-MOCK.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A768DD2D41C8C4008E8BDB /* Deck-MOCK.swift */; };
+		F30A8FF32D58099900C0E6BA /* Flashcard-MOCK.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A768E02D41DB38008E8BDB /* Flashcard-MOCK.swift */; };
+		F30A8FF42D58099F00C0E6BA /* MockDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D775BA2D431B13008F29E9 /* MockDatabaseManager.swift */; };
+		F30A8FF52D5809A500C0E6BA /* SearchResultData-MOCK.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D775B82D42EABD008F29E9 /* SearchResultData-MOCK.swift */; };
+		F30A8FF62D5809AA00C0E6BA /* SubdeckName-MOCK.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386D9D12D44549200FF638A /* SubdeckName-MOCK.swift */; };
+		F30A8FF72D5809AF00C0E6BA /* FlashcardDisplayModel-MOCK.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6CD652D4B18FD00E62E8A /* FlashcardDisplayModel-MOCK.swift */; };
+		F30A8FF82D5809B400C0E6BA /* DeckNameLabel-MOCK.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35EBD142D4F4AAE0073EB55 /* DeckNameLabel-MOCK.swift */; };
+		F30A8FF92D5809B900C0E6BA /* ReviewSessionSummary-MOCK.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F43BAD2D525603007F5615 /* ReviewSessionSummary-MOCK.swift */; };
+		F30A8FFA2D5809BF00C0E6BA /* ChartItem-MOCK.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AF42902D57C94800D8C8CC /* ChartItem-MOCK.swift */; };
+		F30A8FFB2D5809C400C0E6BA /* DeckWithSubdecks-MOCK.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AF42922D57C96F00D8C8CC /* DeckWithSubdecks-MOCK.swift */; };
+		F30A8FFC2D5809CA00C0E6BA /* DeckWithFlashcards-MOCK.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AF42942D57C99800D8C8CC /* DeckWithFlashcards-MOCK.swift */; };
+		F3153EC92D2720C10021FC41 /* PrimaryTextfieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3153EC82D2720C10021FC41 /* PrimaryTextfieldStyle.swift */; };
+		F3153ECC2D27223E0021FC41 /* SecondaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3153ECB2D27223E0021FC41 /* SecondaryButtonStyle.swift */; };
+		F3153ED22D272F310021FC41 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3153ED12D272F310021FC41 /* PrimaryButtonStyle.swift */; };
+		F31CD8782D2F87F400F9CAF4 /* RequestAppReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31CD8772D2F87F400F9CAF4 /* RequestAppReview.swift */; };
+		F31CD87A2D2FB47B00F9CAF4 /* FetchURLData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31CD8792D2FB47B00F9CAF4 /* FetchURLData.swift */; };
+		F31CD87C2D2FB60900F9CAF4 /* FAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31CD87B2D2FB60900F9CAF4 /* FAQ.swift */; };
+		F31CD87E2D2FBF5C00F9CAF4 /* HelpCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31CD87D2D2FBF5C00F9CAF4 /* HelpCenterView.swift */; };
+		F31CD8802D30F9A500F9CAF4 /* WebViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31CD87F2D30F9A500F9CAF4 /* WebViewService.swift */; };
+		F31CD8822D30FD4F00F9CAF4 /* WebViewAlertModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31CD8812D30FD4F00F9CAF4 /* WebViewAlertModifier.swift */; };
+		F31D0D552D34EB110086F091 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31D0D542D34EB110086F091 /* AuthenticationManager.swift */; };
+		F31D0D572D35D75E0086F091 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31D0D562D35D75E0086F091 /* UserDefaultsKeys.swift */; };
+		F31D0D5D2D38958E0086F091 /* AuthenticationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31D0D5C2D38958E0086F091 /* AuthenticationState.swift */; };
+		F3267A1D2D1A6ED300E8ADFE /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F3267A1C2D1A6ED300E8ADFE /* FirebaseAnalytics */; };
+		F3267A1F2D1A6ED300E8ADFE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F3267A1E2D1A6ED300E8ADFE /* FirebaseAuth */; };
+		F3267A212D1A6ED300E8ADFE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F3267A202D1A6ED300E8ADFE /* FirebaseFirestore */; };
+		F3267A242D1A6F3A00E8ADFE /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = F3267A232D1A6F3A00E8ADFE /* GoogleSignIn */; };
+		F3267A262D1A6F3A00E8ADFE /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F3267A252D1A6F3A00E8ADFE /* GoogleSignInSwift */; };
+		F32C4C642D6E7A2800848D1E /* SignUpTextFieldsGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C4C632D6E7A2800848D1E /* SignUpTextFieldsGroup.swift */; };
+		F32C4C662D6E8DCC00848D1E /* AuthenticationTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C4C652D6E8DCC00848D1E /* AuthenticationTask.swift */; };
+		F32C4C682D75C0AE00848D1E /* GoogleAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C4C672D75C0AE00848D1E /* GoogleAuthenticationService.swift */; };
+		F342E1932D5A62D2003DC008 /* LegalAgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342E1922D5A62D2003DC008 /* LegalAgreementView.swift */; };
+		F34605CD2D5C2058003723FF /* DatabaseManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34605CC2D5C2058003723FF /* DatabaseManagerProtocol.swift */; };
+		F34A47BB2D4BE0A000189FAB /* LoadingIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A47BA2D4BE0A000189FAB /* LoadingIcon.swift */; };
+		F35409B92D312D3100618F86 /* SettingsListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35409B82D312D3100618F86 /* SettingsListRow.swift */; };
+		F35409BD2D31DF1300618F86 /* TappableLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35409BC2D31DF1300618F86 /* TappableLink.swift */; };
+		F354BF212D4F84F4000416D3 /* SoftGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F354BF202D4F84F4000416D3 /* SoftGradient.swift */; };
+		F35789E12CED1F1500EF5FE4 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35789E02CED1F1500EF5FE4 /* Toast.swift */; };
+		F35789E32CED240000EF5FE4 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35789E22CED240000EF5FE4 /* ToastView.swift */; };
+		F35A10062D1B6AB10090A756 /* UserValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35A10052D1B6AB10090A756 /* UserValidator.swift */; };
+		F35A10092D1B74970090A756 /* ValidationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35A10082D1B74970090A756 /* ValidationHelper.swift */; };
+		F35A10102D1F6CC40090A756 /* ToolbarButtonTemplates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35A100F2D1F6CC40090A756 /* ToolbarButtonTemplates.swift */; };
+		F35A10172D1F71AB0090A756 /* ColorSet.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F35A10162D1F71AB0090A756 /* ColorSet.xcassets */; };
+		F35A101B2D238BF20090A756 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35A101A2D238BF20090A756 /* ColorPalette.swift */; };
+		F35A101F2D23EA900090A756 /* GeometryReaderModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35A101E2D23EA900090A756 /* GeometryReaderModifier.swift */; };
+		F35C643D2CB6693300CC109A /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35C643C2CB6693300CC109A /* PrimaryButton.swift */; };
+		F35EBD132D4F01170073EB55 /* ReadSelectFlashcardsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35EBD122D4F01170073EB55 /* ReadSelectFlashcardsScreen.swift */; };
+		F35EBD192D4F79530073EB55 /* ListSectionHeaderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35EBD182D4F79530073EB55 /* ListSectionHeaderStyle.swift */; };
+		F36512062D13875C0026235F /* ReviewModeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36512052D13875C0026235F /* ReviewModeSelectionView.swift */; };
+		F36B64C62D60FA56004F970B /* FlashcardFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36B64C52D60FA56004F970B /* FlashcardFormField.swift */; };
+		F3710C722D2867EC006CFD5E /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3710C712D2867EC006CFD5E /* Theme.swift */; };
+		F376987B2D2F6A7D003D70D6 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F376987A2D2F6A7D003D70D6 /* WebView.swift */; };
+		F3795DE52D4E53B400EA465A /* ReadSelectDecksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3795DE42D4E53B400EA465A /* ReadSelectDecksView.swift */; };
+		F386D9122D43641700FF638A /* FlashcardKataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386D90F2D43641700FF638A /* FlashcardKataApp.swift */; };
+		F386D9132D43641700FF638A /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386D9112D43641700FF638A /* HomeScreen.swift */; };
+		F386D9142D43641700FF638A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386D9102D43641700FF638A /* ContentView.swift */; };
+		F386D9932D43DA8300FF638A /* LandingViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386D9792D43DA8300FF638A /* LandingViewType.swift */; };
+		F386D9952D43DA8300FF638A /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386D9902D43DA8300FF638A /* SignUpView.swift */; };
+		F386D9972D43DA8300FF638A /* LandingPageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386D97E2D43DA8300FF638A /* LandingPageScreen.swift */; };
+		F386D9982D43DA8300FF638A /* LegalAgreementTextWithWebLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386D98D2D43DA8300FF638A /* LegalAgreementTextWithWebLink.swift */; };
+		F386D9992D43DA8300FF638A /* EmailPasswordSignUpCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386D97B2D43DA8300FF638A /* EmailPasswordSignUpCredentials.swift */; };
+		F386D99B2D43DA8300FF638A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386D98E2D43DA8300FF638A /* LoginView.swift */; };
+		F386D99D2D43DA8300FF638A /* UserProfileFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386D97C2D43DA8300FF638A /* UserProfileFields.swift */; };
+		F386D99E2D43DA8300FF638A /* PasswordResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386D98F2D43DA8300FF638A /* PasswordResetView.swift */; };
+		F386D9A22D43DA8300FF638A /* LandingPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386D9802D43DA8300FF638A /* LandingPageViewModel.swift */; };
+		F386D9A42D43DA8300FF638A /* EmailPasswordLoginCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386D9782D43DA8300FF638A /* EmailPasswordLoginCredentials.swift */; };
+		F386D9A52D43DA8300FF638A /* SignInSignUpField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386D97A2D43DA8300FF638A /* SignInSignUpField.swift */; };
+		F386D9BB2D43DB0400FF638A /* AuthenticationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386D9B42D43DB0400FF638A /* AuthenticationTextField.swift */; };
+		F386D9BC2D43DB0400FF638A /* BackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386D9B52D43DB0400FF638A /* BackgroundImage.swift */; };
+		F386D9BD2D43DB0400FF638A /* StandardSectionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386D9B92D43DB0400FF638A /* StandardSectionStyle.swift */; };
+		F386D9BE2D43DB0400FF638A /* WordTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386D9B22D43DB0400FF638A /* WordTileView.swift */; };
+		F386D9BF2D43DB0400FF638A /* AuthenticationSectionTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386D9B62D43DB0400FF638A /* AuthenticationSectionTitle.swift */; };
+		F386D9C02D43DB0400FF638A /* SymbolsTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386D9B12D43DB0400FF638A /* SymbolsTileView.swift */; };
+		F386D9C12D43DB0400FF638A /* AppTitleContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386D9B02D43DB0400FF638A /* AppTitleContainerView.swift */; };
+		F386D9C22D43DB0400FF638A /* LargeTileStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386D9B82D43DB0400FF638A /* LargeTileStyle.swift */; };
+		F386D9CE2D44471D00FF638A /* OverlayProgressScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386D9CD2D44471D00FF638A /* OverlayProgressScreen.swift */; };
+		F386D9D02D444FC000FF638A /* SubdeckName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386D9CF2D444FC000FF638A /* SubdeckName.swift */; };
+		F386D9D42D4460E300FF638A /* DeckFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386D9D32D4460E300FF638A /* DeckFormViewModel.swift */; };
+		F38DC4582D546C3F00616830 /* ChartItemDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38DC4572D546C3F00616830 /* ChartItemDisplay.swift */; };
+		F391F1A32D55CF530094335A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F391F1A22D55CF530094335A /* GoogleService-Info.plist */; };
+		F391F1A42D55CF530094335A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F391F1A22D55CF530094335A /* GoogleService-Info.plist */; };
+		F396A5082CCF716B00A80C10 /* PasswordUpdateScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396A5072CCF716B00A80C10 /* PasswordUpdateScreen.swift */; };
+		F396A5132CCF90C900A80C10 /* TopViewControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396A5122CCF90C900A80C10 /* TopViewControllerHelper.swift */; };
+		F3A476B42D479D41000569E0 /* FlashcardsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A476B32D479D41000569E0 /* FlashcardsListViewModel.swift */; };
+		F3A476B62D479DE2000569E0 /* SearchableFlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A476B52D479DE2000569E0 /* SearchableFlashcardView.swift */; };
+		F3A476B82D479E57000569E0 /* FlashcardCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A476B72D479E57000569E0 /* FlashcardCoverView.swift */; };
+		F3A5E69B2D5EA3140022B791 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5E69A2D5EA3140022B791 /* CacheManager.swift */; };
+		F3A5E69D2D5EC66F0022B791 /* MemoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5E69C2D5EC66F0022B791 /* MemoryManager.swift */; };
+		F3A768C72D419A2A008E8BDB /* AppLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A768C62D419A2A008E8BDB /* AppLogger.swift */; };
+		F3A768C92D41A5DD008E8BDB /* DatabaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A768C82D41A5DD008E8BDB /* DatabaseError.swift */; };
+		F3A768D42D41AD17008E8BDB /* Firestorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A768D02D41AD17008E8BDB /* Firestorable.swift */; };
+		F3A768DB2D41C159008E8BDB /* SearachableDeckListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A768DA2D41C159008E8BDB /* SearachableDeckListView.swift */; };
+		F3A811C02CAF575900FEFF2A /* ReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A811BF2CAF575900FEFF2A /* ReviewViewModel.swift */; };
+		F3A915422D55403E00FA6566 /* SignInWithAppleViewReqpresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A915412D55403E00FA6566 /* SignInWithAppleViewReqpresentable.swift */; };
+		F3A97CAC2CD034C500657D9B /* GoogleSignInHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A97CAB2CD034C400657D9B /* GoogleSignInHelper.swift */; };
+		F3A97CAE2CD036F900657D9B /* AuthenticationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A97CAD2CD036F900657D9B /* AuthenticationProvider.swift */; };
+		F3A97CB02CD0528900657D9B /* ReauthenticationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A97CAF2CD0528900657D9B /* ReauthenticationScreen.swift */; };
+		F3A97CB22CD0597800657D9B /* AuthenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A97CB12CD0597800657D9B /* AuthenticationError.swift */; };
+		F3AF428D2D56DF0600D8C8CC /* EmailUpdateScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AF428C2D56DF0600D8C8CC /* EmailUpdateScreen.swift */; };
+		F3AF428F2D57652200D8C8CC /* ModifyActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AF428E2D57652200D8C8CC /* ModifyActionButton.swift */; };
+		F3B2CA6A2CB929EC00ABCEEF /* TimeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B2CA692CB929EC00ABCEEF /* TimeConverter.swift */; };
+		F3B536462D78344800CC165F /* BackgroundGradientColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B536452D78344800CC165F /* BackgroundGradientColors.swift */; };
+		F3B5E1E22D50F865002402D1 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B5E1E12D50F865002402D1 /* IconView.swift */; };
+		F3BA6A372D28988A00380D3A /* Pluralize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BA6A362D28988A00380D3A /* Pluralize.swift */; };
+		F3BE5C462D538928001DDB69 /* StatisticBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE5C452D538928001DDB69 /* StatisticBoxView.swift */; };
+		F3BE5C482D53940E001DDB69 /* TrackerStatistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE5C472D53940E001DDB69 /* TrackerStatistic.swift */; };
+		F3BE5C4A2D5394A3001DDB69 /* TrackerStatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE5C492D5394A3001DDB69 /* TrackerStatisticsView.swift */; };
+		F3BE5C4C2D53A76E001DDB69 /* ReviewSessionStatisticsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE5C4B2D53A76E001DDB69 /* ReviewSessionStatisticsGrid.swift */; };
+		F3BE5C4E2D53A79A001DDB69 /* ChartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE5C4D2D53A79A001DDB69 /* ChartItem.swift */; };
+		F3BFC8522D51D042008148DC /* ApplySearchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BFC8512D51D042008148DC /* ApplySearchable.swift */; };
+		F3CB81502CCE154400FA4BAB /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CB814F2CCE154400FA4BAB /* SettingsViewModel.swift */; };
+		F3D6CD5B2D4890DD00E62E8A /* OrderFlashcardsByDeckID.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6CD5A2D4890DD00E62E8A /* OrderFlashcardsByDeckID.swift */; };
+		F3D6CD5D2D48EB9600E62E8A /* FlashcardFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6CD5C2D48EB9600E62E8A /* FlashcardFormViewModel.swift */; };
+		F3D6CD5F2D4A07C900E62E8A /* AreDatesEqualIgnoringTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6CD5E2D4A07C900E62E8A /* AreDatesEqualIgnoringTime.swift */; };
+		F3D6CD612D4A64CA00E62E8A /* EditSubdeckScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6CD602D4A64CA00E62E8A /* EditSubdeckScreen.swift */; };
+		F3D6CD632D4A652900E62E8A /* EditSubdeckNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6CD622D4A652900E62E8A /* EditSubdeckNameView.swift */; };
+		F3D6CD682D4B5F1C00E62E8A /* BackgroundGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6CD672D4B5F1C00E62E8A /* BackgroundGradient.swift */; };
+		F3D775B72D42E124008F29E9 /* DecksListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D775B62D42E124008F29E9 /* DecksListViewModel.swift */; };
+		F3D775BD2D432F51008F29E9 /* OrderDecksByParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D775BC2D432F51008F29E9 /* OrderDecksByParent.swift */; };
+		F3D775BF2D4352ED008F29E9 /* OrderItemsByKeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D775BE2D4352ED008F29E9 /* OrderItemsByKeyPath.swift */; };
+		F3DA1E772CB8F5DB0067C735 /* SectionShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DA1E762CB8F5DB0067C735 /* SectionShadow.swift */; };
+		F3DD97F52D4E304300FACF14 /* LabeledToggleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD97F42D4E304300FACF14 /* LabeledToggleRow.swift */; };
+		F3DD97F72D4E350F00FACF14 /* HeaderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD97F62D4E350F00FACF14 /* HeaderButton.swift */; };
+		F3DEB2A72D51B43C0087DFB9 /* DeckCoverBackgroundGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DEB2A62D51B43C0087DFB9 /* DeckCoverBackgroundGradient.swift */; };
+		F3EDE1392D4B845900D54DF9 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EDE1382D4B845900D54DF9 /* CustomTabBar.swift */; };
+		F3EDE13B2D4B8B9D00D54DF9 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EDE13A2D4B8B9D00D54DF9 /* Tab.swift */; };
+		F3EDE13D2D4BA04E00D54DF9 /* DeckCoverButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EDE13C2D4BA04E00D54DF9 /* DeckCoverButton.swift */; };
+		F3F404022D4D14BD0004D119 /* SelectAllScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F404012D4D14BD0004D119 /* SelectAllScreen.swift */; };
+		F3F404042D4E104E0004D119 /* SelectDecksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F404032D4E104E0004D119 /* SelectDecksView.swift */; };
+		F3F404062D4E191D0004D119 /* SelectFlashcardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F404052D4E191D0004D119 /* SelectFlashcardsView.swift */; };
+		F3F43BA22D52348B007F5615 /* ToolbarExitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F43BA12D52348B007F5615 /* ToolbarExitButton.swift */; };
+		F3F43BA82D5238CF007F5615 /* ReviewFlashcardCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F43BA72D5238CF007F5615 /* ReviewFlashcardCardsView.swift */; };
+		F3F43BAA2D525373007F5615 /* SessionTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F43BA92D525373007F5615 /* SessionTime.swift */; };
+		F3F514B22CB6729B008C714B /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F514B12CB6729B008C714B /* SecondaryButton.swift */; };
+		F3F9F7AD2D13BA2200E1D150 /* CompactLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F9F7AC2D13BA2200E1D150 /* CompactLabel.swift */; };
+		F3F9F7AF2D1A3AE700E1D150 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F9F7AE2D1A3AE700E1D150 /* AppError.swift */; };
+		F3F9F7B12D1A3DB100E1D150 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F9F7B02D1A3DB100E1D150 /* ErrorView.swift */; };
+		F3FC06C22D28B4A700E5E30F /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FC06C12D28B4A700E5E30F /* AlertHelper.swift */; };
+		F3FC06C92D2CA68100E5E30F /* SearchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FC06C82D2CA68100E5E30F /* SearchRow.swift */; };
+		F3FC06CD2D2CA8B900E5E30F /* SearchResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FC06CC2D2CA8B900E5E30F /* SearchResultData.swift */; };
+		F3FC06CF2D2D032600E5E30F /* SearchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FC06CE2D2D032600E5E30F /* SearchState.swift */; };
+		F3FC06D12D2D03F600E5E30F /* SearchBarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FC06D02D2D03F600E5E30F /* SearchBarManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2965F6B22C644C3A006C9DDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29CEE0962B97DB4E0007E152 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29CEE09D2B97DB4E0007E152;
+			remoteInfo = CodingFlashcard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		290190C32BD70F8F003BA6A0 /* WeekCalendarBarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekCalendarBarChart.swift; sourceTree = "<group>"; };
+		290190C52BD70F9B003BA6A0 /* DecksStudiedChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecksStudiedChart.swift; sourceTree = "<group>"; };
+		290190C72BD73E3C003BA6A0 /* MonthlyCalendarBarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyCalendarBarChart.swift; sourceTree = "<group>"; };
+		2902E6C32C8AB616004E2B11 /* CardSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSort.swift; sourceTree = "<group>"; };
+		2902E6C52C8AB7D3004E2B11 /* ReadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadViewModel.swift; sourceTree = "<group>"; };
+		290DB6D22C9AB9B100DB4869 /* ReviewViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewState.swift; sourceTree = "<group>"; };
+		290DB6D42C9ABBA200DB4869 /* GeneralScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralScoreView.swift; sourceTree = "<group>"; };
+		290DB6DA2C9AC1CC00DB4869 /* ScoreBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBarView.swift; sourceTree = "<group>"; };
+		290E14A32C3336C300C9F1A1 /* ReadScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadScreen.swift; sourceTree = "<group>"; };
+		290E14A72C33732F00C9F1A1 /* FlashcardCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardCardView.swift; sourceTree = "<group>"; };
+		290E14AD2C33D46A00C9F1A1 /* FlashcardTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardTagView.swift; sourceTree = "<group>"; };
+		290E14AF2C33EDEC00C9F1A1 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
+		2911902F2C8BAB520087B6D6 /* FlashcardReadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardReadingView.swift; sourceTree = "<group>"; };
+		2918BE5C2BAB9EE800EA61B6 /* EditFlashcardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFlashcardScreen.swift; sourceTree = "<group>"; };
+		291F8D062B98791500145AD0 /* AddDeckScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeckScreen.swift; sourceTree = "<group>"; };
+		291F8D0A2B995D7C00145AD0 /* FlashcardListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardListScreen.swift; sourceTree = "<group>"; };
+		291F8D0E2B996FBB00145AD0 /* AddFlashcardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFlashcardScreen.swift; sourceTree = "<group>"; };
+		2922104A2C1CFC27003FA3FF /* Font+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
+		2922104C2C1CFD04003FA3FF /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		292439EC2CE30EEB00A603C0 /* FlashcardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardService.swift; sourceTree = "<group>"; };
+		292439EE2CE357D800A603C0 /* GroupByID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupByID.swift; sourceTree = "<group>"; };
+		292439F02CE56DE500A603C0 /* FirestoreUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreUpdate.swift; sourceTree = "<group>"; };
+		292439F42CE5746700A603C0 /* FirestoreCollectionPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreCollectionPath.swift; sourceTree = "<group>"; };
+		29288C5F2C34DA820097A13B /* ViewSizeKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSizeKey.swift; sourceTree = "<group>"; };
+		29288C612C350D8A0097A13B /* ReadSettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadSettingsScreen.swift; sourceTree = "<group>"; };
+		29288C672C3520990097A13B /* PastPeriodMetricsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastPeriodMetricsView.swift; sourceTree = "<group>"; };
+		29288C692C3521A90097A13B /* TrackerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerScreen.swift; sourceTree = "<group>"; };
+		2928CEF32CDB651400B69AA0 /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		292EC93C2C23D60900400E6A /* AddSubDecksDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubDecksDisplay.swift; sourceTree = "<group>"; };
+		292EC93E2C23D69700400E6A /* AddDecksDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDecksDisplay.swift; sourceTree = "<group>"; };
+		292EC9462C240DF500400E6A /* CoverShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverShadow.swift; sourceTree = "<group>"; };
+		292EC9482C24B27400400E6A /* DefaultEmptyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultEmptyScreen.swift; sourceTree = "<group>"; };
+		2930A4C32C0A8E9B003E4101 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2930A4C82C0D3064003E4101 /* Flashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
+		2930A4CE2C0D33E1003E4101 /* ReviewSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewSchedule.swift; sourceTree = "<group>"; };
+		2939290B2BC6257400A9AB1F /* DraggableFlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableFlashcardView.swift; sourceTree = "<group>"; };
+		29563F6B2C487F800085F19F /* ReviewProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewProgressBar.swift; sourceTree = "<group>"; };
+		29563F712C48A24C0085F19F /* StreakCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakCountView.swift; sourceTree = "<group>"; };
+		29563F7B2C48C8DB0085F19F /* ScoreType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreType.swift; sourceTree = "<group>"; };
+		29563F7D2C48CF4E0085F19F /* ReviewSessionMetricsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewSessionMetricsScreen.swift; sourceTree = "<group>"; };
+		29563F7F2C4904960085F19F /* ScoreSummaryBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreSummaryBox.swift; sourceTree = "<group>"; };
+		29563F832C49D6720085F19F /* MetricCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricCard.swift; sourceTree = "<group>"; };
+		29563F872C4A27B10085F19F /* SelectionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionState.swift; sourceTree = "<group>"; };
+		29563F892C4A27D40085F19F /* ExpansionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpansionState.swift; sourceTree = "<group>"; };
+		29563F8D2C4A28EB0085F19F /* HeaderExpansionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderExpansionButton.swift; sourceTree = "<group>"; };
+		29563F932C4C73DD0085F19F /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		29563F952C4C75B10085F19F /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		29563F972C4C771A0085F19F /* UUIDArrayTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUIDArrayTransformer.swift; sourceTree = "<group>"; };
+		2960F4372C3F94AB00D494A7 /* ReviewModeTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewModeTile.swift; sourceTree = "<group>"; };
+		2960F43B2C3F9B5D00D494A7 /* ReviewSettingsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewSettingsSection.swift; sourceTree = "<group>"; };
+		2960F4412C3F9D2500D494A7 /* ScheduledStudyModeOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledStudyModeOptions.swift; sourceTree = "<group>"; };
+		2960F4432C3F9DF400D494A7 /* FlashcardModePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardModePicker.swift; sourceTree = "<group>"; };
+		2960F4452C40628000D494A7 /* SelectionMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionMenu.swift; sourceTree = "<group>"; };
+		2960F4492C409CDB00D494A7 /* StudyGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyGoalView.swift; sourceTree = "<group>"; };
+		2960F44B2C410A7000D494A7 /* GoalsSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsSummaryView.swift; sourceTree = "<group>"; };
+		2965F69A2C5D6C5B006C9DDB /* FlashcardUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardUpdate.swift; sourceTree = "<group>"; };
+		2965F69C2C5D6CE5006C9DDB /* DeckUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckUpdate.swift; sourceTree = "<group>"; };
+		2965F69E2C627FA9006C9DDB /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		2965F6A02C6282BD006C9DDB /* CoreDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataRepository.swift; sourceTree = "<group>"; };
+		2965F6A22C6292F3006C9DDB /* CoreDataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataError.swift; sourceTree = "<group>"; };
+		2965F6A82C63FBC1006C9DDB /* DatabaseManagerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManagerError.swift; sourceTree = "<group>"; };
+		2965F6AE2C644C3A006C9DDB /* FlashcardKata_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashcardKata_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		296603ED2C98EE3E00CC0C5B /* SelectAllHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAllHelper.swift; sourceTree = "<group>"; };
+		296603EF2C98FB1800CC0C5B /* ExpandAllHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandAllHelper.swift; sourceTree = "<group>"; };
+		296C51302BE1A02300BED954 /* SpacedRepetitionSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacedRepetitionSettingsView.swift; sourceTree = "<group>"; };
+		29703B832BA912C2002D0094 /* EditDeckScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDeckScreen.swift; sourceTree = "<group>"; };
+		2971F20C2C90FDA40052BA10 /* DeckWithSubdecks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckWithSubdecks.swift; sourceTree = "<group>"; };
+		2973DBA22C2B897A00EE37F7 /* CheckmarkSquareButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkSquareButton.swift; sourceTree = "<group>"; };
+		2973DBA42C2BC81300EE37F7 /* DeckFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckFormView.swift; sourceTree = "<group>"; };
+		2973DBA62C2CB76600EE37F7 /* TextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldStyle.swift; sourceTree = "<group>"; };
+		2973DBA82C2DDDC200EE37F7 /* SearchResultsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsScreen.swift; sourceTree = "<group>"; };
+		2973DBAB2C2E23E800EE37F7 /* ChartPeriodNavigationButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartPeriodNavigationButtons.swift; sourceTree = "<group>"; };
+		2973DBAD2C2E293400EE37F7 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		2973DBAF2C2E40B500EE37F7 /* ReviewSessionSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewSessionSummary.swift; sourceTree = "<group>"; };
+		2973DBB12C2E413100EE37F7 /* DifficultyLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyLevel.swift; sourceTree = "<group>"; };
+		297622DB2C8FC7DB007FBF63 /* FullScreenProgressScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenProgressScreen.swift; sourceTree = "<group>"; };
+		2978A5E12C6BD5060046F822 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		2978A5E52C6D4A590046F822 /* FlashcardFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardFormView.swift; sourceTree = "<group>"; };
+		297925CD2C8B927900B1E88B /* DeckNameLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckNameLabel.swift; sourceTree = "<group>"; };
+		297925CF2C8BA0AC00B1E88B /* FlashcardDisplayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardDisplayModel.swift; sourceTree = "<group>"; };
+		297F21E02CDC83090099B5FB /* FirestorePaginationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestorePaginationService.swift; sourceTree = "<group>"; };
+		297F21E22CDC83910099B5FB /* FirestoreQueryPredicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreQueryPredicate.swift; sourceTree = "<group>"; };
+		297F21E42CDE9E110099B5FB /* DeckService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckService.swift; sourceTree = "<group>"; };
+		2987A3F32C2B79240091D8CD /* BadgeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeLabel.swift; sourceTree = "<group>"; };
+		29920BA42C74027800A873D8 /* IDUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDUpdate.swift; sourceTree = "<group>"; };
+		299364162C66F10000C5EE5B /* DeckDisclosureGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckDisclosureGroupView.swift; sourceTree = "<group>"; };
+		299364182C6A814500C5EE5B /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		299436142BA42943008D7C4F /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		29A7BDEC2BC4C1D70080A239 /* ScoreTransitionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTransitionScreen.swift; sourceTree = "<group>"; };
+		29B0F7772C3E43F000F30CC5 /* StudyGoalModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyGoalModels.swift; sourceTree = "<group>"; };
+		29B0F7792C3F0C2C00F30CC5 /* GlobalNavigationBarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalNavigationBarStyle.swift; sourceTree = "<group>"; };
+		29B5B94F2C34984F00A7883D /* FlashcardTagFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardTagFactory.swift; sourceTree = "<group>"; };
+		29B5B9512C349AAA00A7883D /* FlashcardTagsDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardTagsDisplay.swift; sourceTree = "<group>"; };
+		29BA9A182C35DBCD009C5874 /* FlashcardLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardLayout.swift; sourceTree = "<group>"; };
+		29BA9A1E2C3C9D94009C5874 /* AddGoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalsView.swift; sourceTree = "<group>"; };
+		29BA9A202C3CA030009C5874 /* ToolbarNextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarNextButton.swift; sourceTree = "<group>"; };
+		29C211432C93A300004A7848 /* DeckWithFlashcards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckWithFlashcards.swift; sourceTree = "<group>"; };
+		29C38A032C22872200BB44B8 /* DesignConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignConstants.swift; sourceTree = "<group>"; };
+		29C38A052C22874400BB44B8 /* ContentConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentConstants.swift; sourceTree = "<group>"; };
+		29C38A0C2C22A85200BB44B8 /* ToolbarBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarBackButton.swift; sourceTree = "<group>"; };
+		29C9CC702BD343B300FBA94F /* Localizable.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
+		29CCB0732BA3222D009034E7 /* ReviewSessionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewSessionScreen.swift; sourceTree = "<group>"; };
+		29CDE7472B9ADAA3009C25FB /* TrackerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerViewModel.swift; sourceTree = "<group>"; };
+		29CEE09E2B97DB4E0007E152 /* FlashcardKata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashcardKata.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29CEE0A52B97DB4F0007E152 /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
+		29CEE0AF2B97EEBC0007E152 /* DecksListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecksListScreen.swift; sourceTree = "<group>"; };
+		29CEE0B12B97EED10007E152 /* ReviewOverviewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewOverviewScreen.swift; sourceTree = "<group>"; };
+		29CEE0B32B97EEE00007E152 /* TrackerSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerSummaryView.swift; sourceTree = "<group>"; };
+		29CEE0B52B97EEEC0007E152 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		29D2BA732C6FDCCA0003F6BC /* DebouncerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebouncerService.swift; sourceTree = "<group>"; };
+		29D3FFA62C322A32005A051D /* FlashcardMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardMode.swift; sourceTree = "<group>"; };
+		29D3FFA82C322AC7005A051D /* ReviewSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewSettings.swift; sourceTree = "<group>"; };
+		29D3FFAA2C32326B005A051D /* CheckboxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxButton.swift; sourceTree = "<group>"; };
+		29D3FFAE2C3260FC005A051D /* ReadingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingListView.swift; sourceTree = "<group>"; };
+		29E0CA632BB77A5F002E08C6 /* FlashcardCardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardCardScreen.swift; sourceTree = "<group>"; };
+		29E0D7EF2C2A2AE300B2A5DF /* ReviewMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewMode.swift; sourceTree = "<group>"; };
+		29E0D7F12C2A407200B2A5DF /* LabeledBodyText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledBodyText.swift; sourceTree = "<group>"; };
+		29E47D182C46F3C700698AD9 /* HeaderSelectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSelectionButton.swift; sourceTree = "<group>"; };
+		29E47D1A2C46F49C00698AD9 /* CheckmarkSelectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkSelectionButton.swift; sourceTree = "<group>"; };
+		29E47D1C2C46F59700698AD9 /* SectionHeaderTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderTitle.swift; sourceTree = "<group>"; };
+		29EAC5462BE35F7800221CFC /* ScheduledReviewLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledReviewLogView.swift; sourceTree = "<group>"; };
+		29EAC54B2BE37A8B00221CFC /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		29F460632C4F3EEC006D9D85 /* CDFlashcard+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDFlashcard+CoreDataClass.swift"; sourceTree = "<group>"; };
+		29F460642C4F3EEC006D9D85 /* CDFlashcard+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDFlashcard+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		29F4606F2C503BC6006D9D85 /* CDDeck+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDDeck+CoreDataClass.swift"; sourceTree = "<group>"; };
+		29F460702C503BC6006D9D85 /* CDDeck+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDDeck+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		29F460732C5076CD006D9D85 /* DeckRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckRepository.swift; sourceTree = "<group>"; };
+		29F460752C50770A006D9D85 /* FlashcardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardRepository.swift; sourceTree = "<group>"; };
+		29F460772C519D32006D9D85 /* LRUCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRUCache.swift; sourceTree = "<group>"; };
+		29F460792C51C671006D9D85 /* MockDeckRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDeckRepository.swift; sourceTree = "<group>"; };
+		29F4607B2C522713006D9D85 /* MockFlashcardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFlashcardRepository.swift; sourceTree = "<group>"; };
+		F30227652D597A760014675C /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		F30227672D59866F0014675C /* ReviewSessionSummaryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewSessionSummaryService.swift; sourceTree = "<group>"; };
+		F30227692D5A13570014675C /* UserProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileService.swift; sourceTree = "<group>"; };
+		F3032DB22D5056F2007FD7E2 /* ReviewSettingsSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewSettingsSections.swift; sourceTree = "<group>"; };
+		F3032DB92D5064E6007FD7E2 /* ReviewSettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewSettingsScreen.swift; sourceTree = "<group>"; };
+		F3032DBB2D50711C007FD7E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F3032DBD2D509768007FD7E2 /* ReviewSelectDecksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewSelectDecksView.swift; sourceTree = "<group>"; };
+		F3032DBF2D5098D5007FD7E2 /* ReviewSelectFlashcardsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewSelectFlashcardsScreen.swift; sourceTree = "<group>"; };
+		F308A8DB2D5D5F640092BFFB /* GuestDefaultScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestDefaultScreen.swift; sourceTree = "<group>"; };
+		F308A8DD2D5D628E0092BFFB /* DefaultViewPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultViewPrimaryButton.swift; sourceTree = "<group>"; };
+		F308A8DF2D5D646A0092BFFB /* DefaultViewInlineImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultViewInlineImage.swift; sourceTree = "<group>"; };
+		F3153EC82D2720C10021FC41 /* PrimaryTextfieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextfieldStyle.swift; sourceTree = "<group>"; };
+		F3153ECB2D27223E0021FC41 /* SecondaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButtonStyle.swift; sourceTree = "<group>"; };
+		F3153ED12D272F310021FC41 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
+		F31AF7842D549D4300E60D45 /* CalendarCalculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCalculations.swift; sourceTree = "<group>"; };
+		F31CD8772D2F87F400F9CAF4 /* RequestAppReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAppReview.swift; sourceTree = "<group>"; };
+		F31CD8792D2FB47B00F9CAF4 /* FetchURLData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchURLData.swift; sourceTree = "<group>"; };
+		F31CD87B2D2FB60900F9CAF4 /* FAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ.swift; sourceTree = "<group>"; };
+		F31CD87D2D2FBF5C00F9CAF4 /* HelpCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCenterView.swift; sourceTree = "<group>"; };
+		F31CD87F2D30F9A500F9CAF4 /* WebViewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewService.swift; sourceTree = "<group>"; };
+		F31CD8812D30FD4F00F9CAF4 /* WebViewAlertModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewAlertModifier.swift; sourceTree = "<group>"; };
+		F31D0D542D34EB110086F091 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		F31D0D562D35D75E0086F091 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		F31D0D5C2D38958E0086F091 /* AuthenticationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationState.swift; sourceTree = "<group>"; };
+		F32C4C632D6E7A2800848D1E /* SignUpTextFieldsGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTextFieldsGroup.swift; sourceTree = "<group>"; };
+		F32C4C652D6E8DCC00848D1E /* AuthenticationTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTask.swift; sourceTree = "<group>"; };
+		F32C4C672D75C0AE00848D1E /* GoogleAuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthenticationService.swift; sourceTree = "<group>"; };
+		F342E1922D5A62D2003DC008 /* LegalAgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalAgreementView.swift; sourceTree = "<group>"; };
+		F342E1962D5BB1C5003DC008 /* PaginationCacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationCacheService.swift; sourceTree = "<group>"; };
+		F34605CC2D5C2058003723FF /* DatabaseManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManagerProtocol.swift; sourceTree = "<group>"; };
+		F34A47BA2D4BE0A000189FAB /* LoadingIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIcon.swift; sourceTree = "<group>"; };
+		F35409B82D312D3100618F86 /* SettingsListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsListRow.swift; sourceTree = "<group>"; };
+		F35409BC2D31DF1300618F86 /* TappableLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappableLink.swift; sourceTree = "<group>"; };
+		F35409BE2D31F8AB00618F86 /* StudyPlanProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyPlanProgressView.swift; sourceTree = "<group>"; };
+		F354BF202D4F84F4000416D3 /* SoftGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftGradient.swift; sourceTree = "<group>"; };
+		F355AB522CB8679100C09B80 /* TrackerModeSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerModeSwitch.swift; sourceTree = "<group>"; };
+		F355AB542CB8683A00C09B80 /* TrackerMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerMode.swift; sourceTree = "<group>"; };
+		F35789E02CED1F1500EF5FE4 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		F35789E22CED240000EF5FE4 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		F35A10052D1B6AB10090A756 /* UserValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserValidator.swift; sourceTree = "<group>"; };
+		F35A10082D1B74970090A756 /* ValidationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationHelper.swift; sourceTree = "<group>"; };
+		F35A100D2D1F4B120090A756 /* ProgressOverlayModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressOverlayModifier.swift; sourceTree = "<group>"; };
+		F35A100F2D1F6CC40090A756 /* ToolbarButtonTemplates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarButtonTemplates.swift; sourceTree = "<group>"; };
+		F35A10162D1F71AB0090A756 /* ColorSet.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorSet.xcassets; sourceTree = "<group>"; };
+		F35A101A2D238BF20090A756 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		F35A101E2D23EA900090A756 /* GeometryReaderModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderModifier.swift; sourceTree = "<group>"; };
+		F35C643C2CB6693300CC109A /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		F35EBD122D4F01170073EB55 /* ReadSelectFlashcardsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadSelectFlashcardsScreen.swift; sourceTree = "<group>"; };
+		F35EBD142D4F4AAE0073EB55 /* DeckNameLabel-MOCK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeckNameLabel-MOCK.swift"; sourceTree = "<group>"; };
+		F35EBD182D4F79530073EB55 /* ListSectionHeaderStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSectionHeaderStyle.swift; sourceTree = "<group>"; };
+		F36512052D13875C0026235F /* ReviewModeSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewModeSelectionView.swift; sourceTree = "<group>"; };
+		F36512072D138B020026235F /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
+		F36512092D138B2A0026235F /* SessionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionType.swift; sourceTree = "<group>"; };
+		F365120B2D1390C90026235F /* StudyPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyPlan.swift; sourceTree = "<group>"; };
+		F36B64C52D60FA56004F970B /* FlashcardFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardFormField.swift; sourceTree = "<group>"; };
+		F3710C712D2867EC006CFD5E /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		F376987A2D2F6A7D003D70D6 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		F3795DE42D4E53B400EA465A /* ReadSelectDecksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadSelectDecksView.swift; sourceTree = "<group>"; };
+		F386D90F2D43641700FF638A /* FlashcardKataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardKataApp.swift; sourceTree = "<group>"; };
+		F386D9102D43641700FF638A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F386D9112D43641700FF638A /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		F386D9782D43DA8300FF638A /* EmailPasswordLoginCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailPasswordLoginCredentials.swift; sourceTree = "<group>"; };
+		F386D9792D43DA8300FF638A /* LandingViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewType.swift; sourceTree = "<group>"; };
+		F386D97A2D43DA8300FF638A /* SignInSignUpField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInSignUpField.swift; sourceTree = "<group>"; };
+		F386D97B2D43DA8300FF638A /* EmailPasswordSignUpCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailPasswordSignUpCredentials.swift; sourceTree = "<group>"; };
+		F386D97C2D43DA8300FF638A /* UserProfileFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileFields.swift; sourceTree = "<group>"; };
+		F386D97E2D43DA8300FF638A /* LandingPageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageScreen.swift; sourceTree = "<group>"; };
+		F386D9802D43DA8300FF638A /* LandingPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewModel.swift; sourceTree = "<group>"; };
+		F386D98D2D43DA8300FF638A /* LegalAgreementTextWithWebLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalAgreementTextWithWebLink.swift; sourceTree = "<group>"; };
+		F386D98E2D43DA8300FF638A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F386D98F2D43DA8300FF638A /* PasswordResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetView.swift; sourceTree = "<group>"; };
+		F386D9902D43DA8300FF638A /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		F386D9B02D43DB0400FF638A /* AppTitleContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTitleContainerView.swift; sourceTree = "<group>"; };
+		F386D9B12D43DB0400FF638A /* SymbolsTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolsTileView.swift; sourceTree = "<group>"; };
+		F386D9B22D43DB0400FF638A /* WordTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTileView.swift; sourceTree = "<group>"; };
+		F386D9B42D43DB0400FF638A /* AuthenticationTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTextField.swift; sourceTree = "<group>"; };
+		F386D9B52D43DB0400FF638A /* BackgroundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImage.swift; sourceTree = "<group>"; };
+		F386D9B62D43DB0400FF638A /* AuthenticationSectionTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationSectionTitle.swift; sourceTree = "<group>"; };
+		F386D9B82D43DB0400FF638A /* LargeTileStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeTileStyle.swift; sourceTree = "<group>"; };
+		F386D9B92D43DB0400FF638A /* StandardSectionStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardSectionStyle.swift; sourceTree = "<group>"; };
+		F386D9C82D443F3600FF638A /* TODO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODO.swift; sourceTree = "<group>"; };
+		F386D9CD2D44471D00FF638A /* OverlayProgressScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayProgressScreen.swift; sourceTree = "<group>"; };
+		F386D9CF2D444FC000FF638A /* SubdeckName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubdeckName.swift; sourceTree = "<group>"; };
+		F386D9D12D44549200FF638A /* SubdeckName-MOCK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SubdeckName-MOCK.swift"; sourceTree = "<group>"; };
+		F386D9D32D4460E300FF638A /* DeckFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckFormViewModel.swift; sourceTree = "<group>"; };
+		F38DC4572D546C3F00616830 /* ChartItemDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartItemDisplay.swift; sourceTree = "<group>"; };
+		F391F1A22D55CF530094335A /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F396A5072CCF716B00A80C10 /* PasswordUpdateScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordUpdateScreen.swift; sourceTree = "<group>"; };
+		F396A5112CCF8BB100A80C10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F396A5122CCF90C900A80C10 /* TopViewControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewControllerHelper.swift; sourceTree = "<group>"; };
+		F3A476B32D479D41000569E0 /* FlashcardsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardsListViewModel.swift; sourceTree = "<group>"; };
+		F3A476B52D479DE2000569E0 /* SearchableFlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableFlashcardView.swift; sourceTree = "<group>"; };
+		F3A476B72D479E57000569E0 /* FlashcardCoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardCoverView.swift; sourceTree = "<group>"; };
+		F3A5E69A2D5EA3140022B791 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		F3A5E69C2D5EC66F0022B791 /* MemoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryManager.swift; sourceTree = "<group>"; };
+		F3A768C62D419A2A008E8BDB /* AppLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogger.swift; sourceTree = "<group>"; };
+		F3A768C82D41A5DD008E8BDB /* DatabaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseError.swift; sourceTree = "<group>"; };
+		F3A768D02D41AD17008E8BDB /* Firestorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firestorable.swift; sourceTree = "<group>"; };
+		F3A768DA2D41C159008E8BDB /* SearachableDeckListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearachableDeckListView.swift; sourceTree = "<group>"; };
+		F3A768DD2D41C8C4008E8BDB /* Deck-MOCK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Deck-MOCK.swift"; sourceTree = "<group>"; };
+		F3A768E02D41DB38008E8BDB /* Flashcard-MOCK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Flashcard-MOCK.swift"; sourceTree = "<group>"; };
+		F3A811BF2CAF575900FEFF2A /* ReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewModel.swift; sourceTree = "<group>"; };
+		F3A915402D553F7300FA6566 /* FlashcardKata.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FlashcardKata.entitlements; sourceTree = "<group>"; };
+		F3A915412D55403E00FA6566 /* SignInWithAppleViewReqpresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleViewReqpresentable.swift; sourceTree = "<group>"; };
+		F3A97CAB2CD034C400657D9B /* GoogleSignInHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInHelper.swift; sourceTree = "<group>"; };
+		F3A97CAD2CD036F900657D9B /* AuthenticationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationProvider.swift; sourceTree = "<group>"; };
+		F3A97CAF2CD0528900657D9B /* ReauthenticationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReauthenticationScreen.swift; sourceTree = "<group>"; };
+		F3A97CB12CD0597800657D9B /* AuthenticationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationError.swift; sourceTree = "<group>"; };
+		F3AF428C2D56DF0600D8C8CC /* EmailUpdateScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailUpdateScreen.swift; sourceTree = "<group>"; };
+		F3AF428E2D57652200D8C8CC /* ModifyActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyActionButton.swift; sourceTree = "<group>"; };
+		F3AF42902D57C94800D8C8CC /* ChartItem-MOCK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChartItem-MOCK.swift"; sourceTree = "<group>"; };
+		F3AF42922D57C96F00D8C8CC /* DeckWithSubdecks-MOCK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeckWithSubdecks-MOCK.swift"; sourceTree = "<group>"; };
+		F3AF42942D57C99800D8C8CC /* DeckWithFlashcards-MOCK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeckWithFlashcards-MOCK.swift"; sourceTree = "<group>"; };
+		F3B2CA692CB929EC00ABCEEF /* TimeConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeConverter.swift; sourceTree = "<group>"; };
+		F3B536452D78344800CC165F /* BackgroundGradientColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundGradientColors.swift; sourceTree = "<group>"; };
+		F3B5E1E12D50F865002402D1 /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
+		F3BA6A362D28988A00380D3A /* Pluralize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pluralize.swift; sourceTree = "<group>"; };
+		F3BE5C452D538928001DDB69 /* StatisticBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticBoxView.swift; sourceTree = "<group>"; };
+		F3BE5C472D53940E001DDB69 /* TrackerStatistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerStatistic.swift; sourceTree = "<group>"; };
+		F3BE5C492D5394A3001DDB69 /* TrackerStatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerStatisticsView.swift; sourceTree = "<group>"; };
+		F3BE5C4B2D53A76E001DDB69 /* ReviewSessionStatisticsGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewSessionStatisticsGrid.swift; sourceTree = "<group>"; };
+		F3BE5C4D2D53A79A001DDB69 /* ChartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartItem.swift; sourceTree = "<group>"; };
+		F3BFC8512D51D042008148DC /* ApplySearchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplySearchable.swift; sourceTree = "<group>"; };
+		F3CB814F2CCE154400FA4BAB /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		F3D6CD5A2D4890DD00E62E8A /* OrderFlashcardsByDeckID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderFlashcardsByDeckID.swift; sourceTree = "<group>"; };
+		F3D6CD5C2D48EB9600E62E8A /* FlashcardFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardFormViewModel.swift; sourceTree = "<group>"; };
+		F3D6CD5E2D4A07C900E62E8A /* AreDatesEqualIgnoringTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreDatesEqualIgnoringTime.swift; sourceTree = "<group>"; };
+		F3D6CD602D4A64CA00E62E8A /* EditSubdeckScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSubdeckScreen.swift; sourceTree = "<group>"; };
+		F3D6CD622D4A652900E62E8A /* EditSubdeckNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSubdeckNameView.swift; sourceTree = "<group>"; };
+		F3D6CD652D4B18FD00E62E8A /* FlashcardDisplayModel-MOCK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlashcardDisplayModel-MOCK.swift"; sourceTree = "<group>"; };
+		F3D6CD672D4B5F1C00E62E8A /* BackgroundGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundGradient.swift; sourceTree = "<group>"; };
+		F3D775B62D42E124008F29E9 /* DecksListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecksListViewModel.swift; sourceTree = "<group>"; };
+		F3D775B82D42EABD008F29E9 /* SearchResultData-MOCK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchResultData-MOCK.swift"; sourceTree = "<group>"; };
+		F3D775BA2D431B13008F29E9 /* MockDatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDatabaseManager.swift; sourceTree = "<group>"; };
+		F3D775BC2D432F51008F29E9 /* OrderDecksByParent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDecksByParent.swift; sourceTree = "<group>"; };
+		F3D775BE2D4352ED008F29E9 /* OrderItemsByKeyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItemsByKeyPath.swift; sourceTree = "<group>"; };
+		F3DA1E762CB8F5DB0067C735 /* SectionShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionShadow.swift; sourceTree = "<group>"; };
+		F3DD97F42D4E304300FACF14 /* LabeledToggleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledToggleRow.swift; sourceTree = "<group>"; };
+		F3DD97F62D4E350F00FACF14 /* HeaderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderButton.swift; sourceTree = "<group>"; };
+		F3DEB2A62D51B43C0087DFB9 /* DeckCoverBackgroundGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckCoverBackgroundGradient.swift; sourceTree = "<group>"; };
+		F3E0274E2D4C4A3600D18B6B /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		F3E729552CC1E34C00578BA9 /* GoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalView.swift; sourceTree = "<group>"; };
+		F3E729572CC1E38700578BA9 /* GoalCompletionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCompletionType.swift; sourceTree = "<group>"; };
+		F3EB297D2CD2307600842EAE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F3EC10C52D3DE4C8006342D5 /* ProgressOverlayModifier2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressOverlayModifier2.swift; sourceTree = "<group>"; };
+		F3EDE1382D4B845900D54DF9 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		F3EDE13A2D4B8B9D00D54DF9 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		F3EDE13C2D4BA04E00D54DF9 /* DeckCoverButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckCoverButton.swift; sourceTree = "<group>"; };
+		F3F404012D4D14BD0004D119 /* SelectAllScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAllScreen.swift; sourceTree = "<group>"; };
+		F3F404032D4E104E0004D119 /* SelectDecksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDecksView.swift; sourceTree = "<group>"; };
+		F3F404052D4E191D0004D119 /* SelectFlashcardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFlashcardsView.swift; sourceTree = "<group>"; };
+		F3F43BA12D52348B007F5615 /* ToolbarExitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarExitButton.swift; sourceTree = "<group>"; };
+		F3F43BA72D5238CF007F5615 /* ReviewFlashcardCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewFlashcardCardsView.swift; sourceTree = "<group>"; };
+		F3F43BA92D525373007F5615 /* SessionTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTime.swift; sourceTree = "<group>"; };
+		F3F43BAD2D525603007F5615 /* ReviewSessionSummary-MOCK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReviewSessionSummary-MOCK.swift"; sourceTree = "<group>"; };
+		F3F514B12CB6729B008C714B /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		F3F9F7AC2D13BA2200E1D150 /* CompactLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactLabel.swift; sourceTree = "<group>"; };
+		F3F9F7AE2D1A3AE700E1D150 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		F3F9F7B02D1A3DB100E1D150 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		F3FC06C12D28B4A700E5E30F /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
+		F3FC06C62D28C76A00E5E30F /* DebouncedSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebouncedSearchView.swift; sourceTree = "<group>"; };
+		F3FC06C82D2CA68100E5E30F /* SearchRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRow.swift; sourceTree = "<group>"; };
+		F3FC06CC2D2CA8B900E5E30F /* SearchResultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultData.swift; sourceTree = "<group>"; };
+		F3FC06CE2D2D032600E5E30F /* SearchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchState.swift; sourceTree = "<group>"; };
+		F3FC06D02D2D03F600E5E30F /* SearchBarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2965F6AB2C644C3A006C9DDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29CEE09B2B97DB4E0007E152 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3267A262D1A6F3A00E8ADFE /* GoogleSignInSwift in Frameworks */,
+				F3267A1D2D1A6ED300E8ADFE /* FirebaseAnalytics in Frameworks */,
+				F3267A242D1A6F3A00E8ADFE /* GoogleSignIn in Frameworks */,
+				F3267A1F2D1A6ED300E8ADFE /* FirebaseAuth in Frameworks */,
+				F3267A212D1A6ED300E8ADFE /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		290EC88D2BA18F6B0011DCC2 /* FutureDevelopment */ = {
+			isa = PBXGroup;
+			children = (
+				2973DBA22C2B897A00EE37F7 /* CheckmarkSquareButton.swift */,
+				F35A100D2D1F4B120090A756 /* ProgressOverlayModifier.swift */,
+				F3EC10C52D3DE4C8006342D5 /* ProgressOverlayModifier2.swift */,
+				2930A4CE2C0D33E1003E4101 /* ReviewSchedule.swift */,
+				F342E1962D5BB1C5003DC008 /* PaginationCacheService.swift */,
+				29C9CC702BD343B300FBA94F /* Localizable.stringsdict */,
+				F3FC06C62D28C76A00E5E30F /* DebouncedSearchView.swift */,
+				2973DBAD2C2E293400EE37F7 /* ChartView.swift */,
+				290190C32BD70F8F003BA6A0 /* WeekCalendarBarChart.swift */,
+				290190C72BD73E3C003BA6A0 /* MonthlyCalendarBarChart.swift */,
+				2973DBAB2C2E23E800EE37F7 /* ChartPeriodNavigationButtons.swift */,
+				F355AB542CB8683A00C09B80 /* TrackerMode.swift */,
+				29B0F7772C3E43F000F30CC5 /* StudyGoalModels.swift */,
+				F3E729572CC1E38700578BA9 /* GoalCompletionType.swift */,
+				F3E0274E2D4C4A3600D18B6B /* CustomNavigationBar.swift */,
+				F35409BE2D31F8AB00618F86 /* StudyPlanProgressView.swift */,
+				29EAC5462BE35F7800221CFC /* ScheduledReviewLogView.swift */,
+				F36512072D138B020026235F /* ReviewView.swift */,
+				296C51302BE1A02300BED954 /* SpacedRepetitionSettingsView.swift */,
+				2960F4412C3F9D2500D494A7 /* ScheduledStudyModeOptions.swift */,
+				F36512092D138B2A0026235F /* SessionType.swift */,
+				F3EB297D2CD2307600842EAE /* ProfileView.swift */,
+				F365120B2D1390C90026235F /* StudyPlan.swift */,
+				29EAC54D2BE37A9900221CFC /* CoreData */,
+				2960F44B2C410A7000D494A7 /* GoalsSummaryView.swift */,
+				297F21E02CDC83090099B5FB /* FirestorePaginationService.swift */,
+				F3E729552CC1E34C00578BA9 /* GoalView.swift */,
+				29BA9A1E2C3C9D94009C5874 /* AddGoalsView.swift */,
+				2960F4492C409CDB00D494A7 /* StudyGoalView.swift */,
+				2960F4452C40628000D494A7 /* SelectionMenu.swift */,
+				29288C672C3520990097A13B /* PastPeriodMetricsView.swift */,
+				F355AB522CB8679100C09B80 /* TrackerModeSwitch.swift */,
+				F31AF7842D549D4300E60D45 /* CalendarCalculations.swift */,
+			);
+			path = FutureDevelopment;
+			sourceTree = "<group>";
+		};
+		292210312C1CD432003FA3FF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				29C38A072C22874800BB44B8 /* AppConstants */,
+				292210322C1CD441003FA3FF /* Extensions */,
+				292210332C1CD447003FA3FF /* Helpers */,
+				F38ACAB02D7B251D00AAE246 /* Methods */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		292210322C1CD441003FA3FF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				299364182C6A814500C5EE5B /* Date+Extensions.swift */,
+				2922104A2C1CFC27003FA3FF /* Font+Extensions.swift */,
+				2922104C2C1CFD04003FA3FF /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		292210332C1CD447003FA3FF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				296603EF2C98FB1800CC0C5B /* ExpandAllHelper.swift */,
+				296603ED2C98EE3E00CC0C5B /* SelectAllHelper.swift */,
+				F396A5122CCF90C900A80C10 /* TopViewControllerHelper.swift */,
+				F3FC06C12D28B4A700E5E30F /* AlertHelper.swift */,
+				F31D0D562D35D75E0086F091 /* UserDefaultsKeys.swift */,
+				290E14AF2C33EDEC00C9F1A1 /* FlowLayout.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		292210342C1CD6F7003FA3FF /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				F354BF202D4F84F4000416D3 /* SoftGradient.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		292210352C1CD718003FA3FF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2960F4372C3F94AB00D494A7 /* ReviewModeTile.swift */,
+				29563F7F2C4904960085F19F /* ScoreSummaryBox.swift */,
+				29563F832C49D6720085F19F /* MetricCard.swift */,
+				F3DEB2A52D511BF80087DFB9 /* ScoreBar */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		292210392C1CD805003FA3FF /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				2973DBA62C2CB76600EE37F7 /* TextFieldStyle.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		2922103D2C1CD83F003FA3FF /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				F343D8BF2D422F9B0097D561 /* TextFieldStyles */,
+				F343D8BE2D422F880097D561 /* ButtonStyles */,
+				F343D8BD2D422F730097D561 /* Shadows */,
+				F343D8BC2D422EA00097D561 /* Content */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		2922103E2C1CD848003FA3FF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F3AF428E2D57652200D8C8CC /* ModifyActionButton.swift */,
+				F31532412D450AC600449D63 /* Search */,
+				F31532402D450AB500449D63 /* Flashcard */,
+				F343D8BA2D422DED0097D561 /* Deck */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2922103F2C1CD85A003FA3FF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F3BE5C452D538928001DDB69 /* StatisticBoxView.swift */,
+				290190C52BD70F9B003BA6A0 /* DecksStudiedChart.swift */,
+				F3BE5C4B2D53A76E001DDB69 /* ReviewSessionStatisticsGrid.swift */,
+				F38DC4572D546C3F00616830 /* ChartItemDisplay.swift */,
+				F3BE5C492D5394A3001DDB69 /* TrackerStatisticsView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		292210412C1CD86E003FA3FF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F386D9CC2D44456000FF638A /* Content */,
+				F343D8C72D42342B0097D561 /* Text */,
+				F343D8BB2D422E930097D561 /* Buttons */,
+				F343D8C12D4230AE0097D561 /* Labels */,
+				29C38A0E2C22A85E00BB44B8 /* ToolbarButtons */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		292439F62CE578FC00A603C0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F3A811BF2CAF575900FEFF2A /* ReviewViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		29288C652C35163F0097A13B /* FlashcardTag */ = {
+			isa = PBXGroup;
+			children = (
+				29B5B94F2C34984F00A7883D /* FlashcardTagFactory.swift */,
+				290E14AD2C33D46A00C9F1A1 /* FlashcardTagView.swift */,
+				29B5B9512C349AAA00A7883D /* FlashcardTagsDisplay.swift */,
+			);
+			path = FlashcardTag;
+			sourceTree = "<group>";
+		};
+		2930A4942C0A807F003E4101 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				F386D9772D43DA7B00FF638A /* Login */,
+				29CEE0B72B97F6390007E152 /* DecksTab */,
+				29D3FF9E2C2ECA06005A051D /* ReadTab */,
+				29CEE0B92B97F64E0007E152 /* ReviewTab */,
+				29CEE0BA2B97F6560007E152 /* TrackerTab */,
+				29CEE0BB2B97F65E0007E152 /* SettingsTab */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		2930A4952C0A80FE003E4101 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3FC06CC2D2CA8B900E5E30F /* SearchResultData.swift */,
+				F3FC06CE2D2D032600E5E30F /* SearchState.swift */,
+				F386D9CF2D444FC000FF638A /* SubdeckName.swift */,
+				F36B64C52D60FA56004F970B /* FlashcardFormField.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2930A4972C0A8112003E4101 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F3A476B32D479D41000569E0 /* FlashcardsListViewModel.swift */,
+				F3D6CD5C2D48EB9600E62E8A /* FlashcardFormViewModel.swift */,
+				F386D9D32D4460E300FF638A /* DeckFormViewModel.swift */,
+				F3D775B62D42E124008F29E9 /* DecksListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2930A4A12C0A82F8003E4101 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F3F43BA72D5238CF007F5615 /* ReviewFlashcardCardsView.swift */,
+				2939290B2BC6257400A9AB1F /* DraggableFlashcardView.swift */,
+				F36512052D13875C0026235F /* ReviewModeSelectionView.swift */,
+				290DB6DA2C9AC1CC00DB4869 /* ScoreBarView.swift */,
+				29563F6B2C487F800085F19F /* ReviewProgressBar.swift */,
+				292210352C1CD718003FA3FF /* Components */,
+				292210342C1CD6F7003FA3FF /* ViewModifiers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2930A4A22C0A82F9003E4101 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				29563F7B2C48C8DB0085F19F /* ScoreType.swift */,
+				290DB6D22C9AB9B100DB4869 /* ReviewViewState.swift */,
+				2973DBAF2C2E40B500EE37F7 /* ReviewSessionSummary.swift */,
+				29E0D7EF2C2A2AE300B2A5DF /* ReviewMode.swift */,
+				F3F43BA92D525373007F5615 /* SessionTime.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2930A4A32C0A8329003E4101 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				29CDE7472B9ADAA3009C25FB /* TrackerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2930A4A52C0A8332003E4101 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				29CEE0B32B97EEE00007E152 /* TrackerSummaryView.swift */,
+				2922103F2C1CD85A003FA3FF /* Components */,
+				F33BD0322CB75FF4004048E1 /* ViewModifiers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2930A4A62C0A8334003E4101 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3BE5C472D53940E001DDB69 /* TrackerStatistic.swift */,
+				F3BE5C4D2D53A79A001DDB69 /* ChartItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2930A4A82C0A8349003E4101 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F31CD87D2D2FBF5C00F9CAF4 /* HelpCenterView.swift */,
+				F39F14F02CEC0B3F001E7318 /* ViewModifiers */,
+				F39F14F12CEC0B49001E7318 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2930A4AB2C0A83D9003E4101 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F3D6CD582D48721A00E62E8A /* Deck */,
+				F3D6CD592D48721F00E62E8A /* Flashcard */,
+				292210392C1CD805003FA3FF /* ViewModifiers */,
+				2922103E2C1CD848003FA3FF /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2930A4AF2C0A85CB003E4101 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2930A4C52C0A8ED3003E4101 /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2930A4B02C0A867B003E4101 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F3F404002D4CDE9E0004D119 /* Screens */,
+				2930A4B62C0A88A5003E4101 /* Views */,
+				2930A4B72C0A88A8003E4101 /* Models */,
+				2922103D2C1CD83F003FA3FF /* ViewModifiers */,
+				292210412C1CD86E003FA3FF /* Components */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		2930A4B12C0A86F5003E4101 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F343D8CA2D42355E0097D561 /* Managers */,
+				F343D8CB2D4235EE0097D561 /* Services */,
+				F3A768BF2D40F9AD008E8BDB /* Database */,
+				F3AA39EC2CCDD3A2004498E2 /* Authentication */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2930A4B62C0A88A5003E4101 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				290E14A72C33732F00C9F1A1 /* FlashcardCardView.swift */,
+				F308A8DF2D5D646A0092BFFB /* DefaultViewInlineImage.swift */,
+				F3032DB62D505821007FD7E2 /* ReviewSettings */,
+				F3032DB52D5057DE007FD7E2 /* Errors */,
+				F3032DB42D5057D1007FD7E2 /* Backgrounds */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2930A4B72C0A88A8003E4101 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F343D8C62D4232BE0097D561 /* General */,
+				F343D8C22D42326A0097D561 /* Deck */,
+				F343D8C42D4232800097D561 /* Flashcard */,
+				F343D8C32D4232720097D561 /* ReviewSession */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2930A4BF2C0A8BE0003E4101 /* Deck */ = {
+			isa = PBXGroup;
+			children = (
+				29CEE0AF2B97EEBC0007E152 /* DecksListScreen.swift */,
+				291F8D062B98791500145AD0 /* AddDeckScreen.swift */,
+				29703B832BA912C2002D0094 /* EditDeckScreen.swift */,
+				F3D6CD602D4A64CA00E62E8A /* EditSubdeckScreen.swift */,
+			);
+			path = Deck;
+			sourceTree = "<group>";
+		};
+		2930A4C02C0A8C32003E4101 /* Flashcard */ = {
+			isa = PBXGroup;
+			children = (
+				291F8D0A2B995D7C00145AD0 /* FlashcardListScreen.swift */,
+				291F8D0E2B996FBB00145AD0 /* AddFlashcardScreen.swift */,
+				2918BE5C2BAB9EE800EA61B6 /* EditFlashcardScreen.swift */,
+				29E0CA632BB77A5F002E08C6 /* FlashcardCardScreen.swift */,
+			);
+			path = Flashcard;
+			sourceTree = "<group>";
+		};
+		2930A4C52C0A8ED3003E4101 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				29CEE0A52B97DB4F0007E152 /* AppIcon.xcassets */,
+				2930A4C32C0A8E9B003E4101 /* Images.xcassets */,
+				F35A10162D1F71AB0090A756 /* ColorSet.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		29C38A072C22874800BB44B8 /* AppConstants */ = {
+			isa = PBXGroup;
+			children = (
+				29C38A032C22872200BB44B8 /* DesignConstants.swift */,
+				F35A101A2D238BF20090A756 /* ColorPalette.swift */,
+				29C38A052C22874400BB44B8 /* ContentConstants.swift */,
+			);
+			path = AppConstants;
+			sourceTree = "<group>";
+		};
+		29C38A0E2C22A85E00BB44B8 /* ToolbarButtons */ = {
+			isa = PBXGroup;
+			children = (
+				F35A100F2D1F6CC40090A756 /* ToolbarButtonTemplates.swift */,
+				29C38A0C2C22A85200BB44B8 /* ToolbarBackButton.swift */,
+				29BA9A202C3CA030009C5874 /* ToolbarNextButton.swift */,
+				F3F43BA12D52348B007F5615 /* ToolbarExitButton.swift */,
+			);
+			path = ToolbarButtons;
+			sourceTree = "<group>";
+		};
+		29CEE0952B97DB4E0007E152 = {
+			isa = PBXGroup;
+			children = (
+				29CEE0A02B97DB4E0007E152 /* FlashcardKata */,
+				29CEE09F2B97DB4E0007E152 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		29CEE09F2B97DB4E0007E152 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29CEE09E2B97DB4E0007E152 /* FlashcardKata.app */,
+				2965F6AE2C644C3A006C9DDB /* FlashcardKata_Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29CEE0A02B97DB4E0007E152 /* FlashcardKata */ = {
+			isa = PBXGroup;
+			children = (
+				F3A915402D553F7300FA6566 /* FlashcardKata.entitlements */,
+				F396A5112CCF8BB100A80C10 /* Info.plist */,
+				F3E844A02D84287500BB5CD3 /* FlashcardKataSecrets */,
+				F386D9452D43DA4600FF638A /* App */,
+				2930A4942C0A807F003E4101 /* Features */,
+				2930A4B02C0A867B003E4101 /* Shared */,
+				F3A768DC2D41C884008E8BDB /* Mocks */,
+				2930A4B12C0A86F5003E4101 /* Services */,
+				292210312C1CD432003FA3FF /* Utilities */,
+				2930A4AF2C0A85CB003E4101 /* Resources */,
+				F3032DBC2D50711C007FD7E2 /* Preview Content */,
+				F3AA35CC2D83053000409D35 /* Tests */,
+				290EC88D2BA18F6B0011DCC2 /* FutureDevelopment */,
+			);
+			path = FlashcardKata;
+			sourceTree = "<group>";
+		};
+		29CEE0B72B97F6390007E152 /* DecksTab */ = {
+			isa = PBXGroup;
+			children = (
+				F340F92D2D27C1F000238544 /* Screens */,
+				2930A4AB2C0A83D9003E4101 /* Views */,
+				2930A4952C0A80FE003E4101 /* Models */,
+				2930A4972C0A8112003E4101 /* ViewModels */,
+			);
+			path = DecksTab;
+			sourceTree = "<group>";
+		};
+		29CEE0B92B97F64E0007E152 /* ReviewTab */ = {
+			isa = PBXGroup;
+			children = (
+				F35409C22D31F92600618F86 /* Screens */,
+				2930A4A12C0A82F8003E4101 /* Views */,
+				2930A4A22C0A82F9003E4101 /* Models */,
+				292439F62CE578FC00A603C0 /* ViewModels */,
+			);
+			path = ReviewTab;
+			sourceTree = "<group>";
+		};
+		29CEE0BA2B97F6560007E152 /* TrackerTab */ = {
+			isa = PBXGroup;
+			children = (
+				F348604F2D4CC09F00F9CF13 /* Screens */,
+				2930A4A52C0A8332003E4101 /* Views */,
+				2930A4A62C0A8334003E4101 /* Models */,
+				2930A4A32C0A8329003E4101 /* ViewModels */,
+			);
+			path = TrackerTab;
+			sourceTree = "<group>";
+		};
+		29CEE0BB2B97F65E0007E152 /* SettingsTab */ = {
+			isa = PBXGroup;
+			children = (
+				F35409C32D31F9FB00618F86 /* Screens */,
+				2930A4A82C0A8349003E4101 /* Views */,
+				F3D5C9C62CEC0A7D00350F9C /* Models */,
+				F38E7D432CB68F5F008939D9 /* ViewModels */,
+			);
+			path = SettingsTab;
+			sourceTree = "<group>";
+		};
+		29D3FF9E2C2ECA06005A051D /* ReadTab */ = {
+			isa = PBXGroup;
+			children = (
+				F3D6CD642D4B16E200E62E8A /* Screens */,
+				29D3FFA02C2ECA73005A051D /* Views */,
+				29D3FF9F2C2ECA5D005A051D /* Models */,
+				29D3FFA12C2ECA7B005A051D /* ViewModels */,
+			);
+			path = ReadTab;
+			sourceTree = "<group>";
+		};
+		29D3FF9F2C2ECA5D005A051D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				29BA9A182C35DBCD009C5874 /* FlashcardLayout.swift */,
+				297925CF2C8BA0AC00B1E88B /* FlashcardDisplayModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		29D3FFA02C2ECA73005A051D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				29D3FFAE2C3260FC005A051D /* ReadingListView.swift */,
+				2911902F2C8BAB520087B6D6 /* FlashcardReadingView.swift */,
+				29D3FFA22C2ECA8C005A051D /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		29D3FFA12C2ECA7B005A051D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2902E6C52C8AB7D3004E2B11 /* ReadViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		29D3FFA22C2ECA8C005A051D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				29288C5F2C34DA820097A13B /* ViewSizeKey.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		29EAC54D2BE37A9900221CFC /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				29F460772C519D32006D9D85 /* LRUCache.swift */,
+				29F460752C50770A006D9D85 /* FlashcardRepository.swift */,
+				29F460732C5076CD006D9D85 /* DeckRepository.swift */,
+				2965F6A02C6282BD006C9DDB /* CoreDataRepository.swift */,
+				29EAC54B2BE37A8B00221CFC /* CoreDataStack.swift */,
+				2965F69E2C627FA9006C9DDB /* Repository.swift */,
+				29F460792C51C671006D9D85 /* MockDeckRepository.swift */,
+				29F4607B2C522713006D9D85 /* MockFlashcardRepository.swift */,
+				29563F972C4C771A0085F19F /* UUIDArrayTransformer.swift */,
+				2965F6A22C6292F3006C9DDB /* CoreDataError.swift */,
+				29F4607F2C524F2C006D9D85 /* NSManagedObject */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		29F4607F2C524F2C006D9D85 /* NSManagedObject */ = {
+			isa = PBXGroup;
+			children = (
+				29F4606F2C503BC6006D9D85 /* CDDeck+CoreDataClass.swift */,
+				29F460702C503BC6006D9D85 /* CDDeck+CoreDataProperties.swift */,
+				29F460632C4F3EEC006D9D85 /* CDFlashcard+CoreDataClass.swift */,
+				29F460642C4F3EEC006D9D85 /* CDFlashcard+CoreDataProperties.swift */,
+			);
+			path = NSManagedObject;
+			sourceTree = "<group>";
+		};
+		F3032DB42D5057D1007FD7E2 /* Backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				F386D9B52D43DB0400FF638A /* BackgroundImage.swift */,
+				F3D6CD672D4B5F1C00E62E8A /* BackgroundGradient.swift */,
+			);
+			path = Backgrounds;
+			sourceTree = "<group>";
+		};
+		F3032DB52D5057DE007FD7E2 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				F35789E22CED240000EF5FE4 /* ToastView.swift */,
+				F3F9F7B02D1A3DB100E1D150 /* ErrorView.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		F3032DB62D505821007FD7E2 /* ReviewSettings */ = {
+			isa = PBXGroup;
+			children = (
+				F3032DB22D5056F2007FD7E2 /* ReviewSettingsSections.swift */,
+				2960F4432C3F9DF400D494A7 /* FlashcardModePicker.swift */,
+				2960F43B2C3F9B5D00D494A7 /* ReviewSettingsSection.swift */,
+			);
+			path = ReviewSettings;
+			sourceTree = "<group>";
+		};
+		F3032DB72D5058D6007FD7E2 /* Ordering */ = {
+			isa = PBXGroup;
+			children = (
+				292439EE2CE357D800A603C0 /* GroupByID.swift */,
+				F3D775BC2D432F51008F29E9 /* OrderDecksByParent.swift */,
+				F3D6CD5A2D4890DD00E62E8A /* OrderFlashcardsByDeckID.swift */,
+				F3D775BE2D4352ED008F29E9 /* OrderItemsByKeyPath.swift */,
+			);
+			path = Ordering;
+			sourceTree = "<group>";
+		};
+		F3032DB82D5058DE007FD7E2 /* DateTime */ = {
+			isa = PBXGroup;
+			children = (
+				F3B2CA692CB929EC00ABCEEF /* TimeConverter.swift */,
+				F3D6CD5E2D4A07C900E62E8A /* AreDatesEqualIgnoringTime.swift */,
+			);
+			path = DateTime;
+			sourceTree = "<group>";
+		};
+		F3032DBC2D50711C007FD7E2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F3032DBB2D50711C007FD7E2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F31532402D450AB500449D63 /* Flashcard */ = {
+			isa = PBXGroup;
+			children = (
+				F3A476B72D479E57000569E0 /* FlashcardCoverView.swift */,
+			);
+			path = Flashcard;
+			sourceTree = "<group>";
+		};
+		F31532412D450AC600449D63 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				F3FC06C82D2CA68100E5E30F /* SearchRow.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		F33BD0322CB75FF4004048E1 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		F340F92D2D27C1F000238544 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				2930A4BF2C0A8BE0003E4101 /* Deck */,
+				2930A4C02C0A8C32003E4101 /* Flashcard */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F343D8BA2D422DED0097D561 /* Deck */ = {
+			isa = PBXGroup;
+			children = (
+				F3EDE13C2D4BA04E00D54DF9 /* DeckCoverButton.swift */,
+				292EC93E2C23D69700400E6A /* AddDecksDisplay.swift */,
+				292EC93C2C23D60900400E6A /* AddSubDecksDisplay.swift */,
+				F3D6CD622D4A652900E62E8A /* EditSubdeckNameView.swift */,
+				F3DEB2A62D51B43C0087DFB9 /* DeckCoverBackgroundGradient.swift */,
+			);
+			path = Deck;
+			sourceTree = "<group>";
+		};
+		F343D8BB2D422E930097D561 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				F3DD97FA2D4E35C800FACF14 /* Form */,
+				F3DD97F92D4E356F00FACF14 /* Checkmark */,
+				F3DD97F82D4E356A00FACF14 /* Header */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		F343D8BC2D422EA00097D561 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				F35EBD182D4F79530073EB55 /* ListSectionHeaderStyle.swift */,
+				F35A101E2D23EA900090A756 /* GeometryReaderModifier.swift */,
+				29B0F7792C3F0C2C00F30CC5 /* GlobalNavigationBarStyle.swift */,
+				F3BFC8512D51D042008148DC /* ApplySearchable.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		F343D8BD2D422F730097D561 /* Shadows */ = {
+			isa = PBXGroup;
+			children = (
+				292EC9462C240DF500400E6A /* CoverShadow.swift */,
+				F3DA1E762CB8F5DB0067C735 /* SectionShadow.swift */,
+			);
+			path = Shadows;
+			sourceTree = "<group>";
+		};
+		F343D8BE2D422F880097D561 /* ButtonStyles */ = {
+			isa = PBXGroup;
+			children = (
+				F3153ED12D272F310021FC41 /* PrimaryButtonStyle.swift */,
+				F3153ECB2D27223E0021FC41 /* SecondaryButtonStyle.swift */,
+			);
+			path = ButtonStyles;
+			sourceTree = "<group>";
+		};
+		F343D8BF2D422F9B0097D561 /* TextFieldStyles */ = {
+			isa = PBXGroup;
+			children = (
+				F3153EC82D2720C10021FC41 /* PrimaryTextfieldStyle.swift */,
+			);
+			path = TextFieldStyles;
+			sourceTree = "<group>";
+		};
+		F343D8C12D4230AE0097D561 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				2987A3F32C2B79240091D8CD /* BadgeLabel.swift */,
+				F3F9F7AC2D13BA2200E1D150 /* CompactLabel.swift */,
+				29288C652C35163F0097A13B /* FlashcardTag */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		F343D8C22D42326A0097D561 /* Deck */ = {
+			isa = PBXGroup;
+			children = (
+				29563F932C4C73DD0085F19F /* Deck.swift */,
+				297925CD2C8B927900B1E88B /* DeckNameLabel.swift */,
+				2965F69C2C5D6CE5006C9DDB /* DeckUpdate.swift */,
+				2971F20C2C90FDA40052BA10 /* DeckWithSubdecks.swift */,
+				29C211432C93A300004A7848 /* DeckWithFlashcards.swift */,
+			);
+			path = Deck;
+			sourceTree = "<group>";
+		};
+		F343D8C32D4232720097D561 /* ReviewSession */ = {
+			isa = PBXGroup;
+			children = (
+				29D3FFA62C322A32005A051D /* FlashcardMode.swift */,
+				29D3FFA82C322AC7005A051D /* ReviewSettings.swift */,
+				2902E6C32C8AB616004E2B11 /* CardSort.swift */,
+			);
+			path = ReviewSession;
+			sourceTree = "<group>";
+		};
+		F343D8C42D4232800097D561 /* Flashcard */ = {
+			isa = PBXGroup;
+			children = (
+				2930A4C82C0D3064003E4101 /* Flashcard.swift */,
+				2965F69A2C5D6C5B006C9DDB /* FlashcardUpdate.swift */,
+				2973DBB12C2E413100EE37F7 /* DifficultyLevel.swift */,
+			);
+			path = Flashcard;
+			sourceTree = "<group>";
+		};
+		F343D8C62D4232BE0097D561 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				F3710C712D2867EC006CFD5E /* Theme.swift */,
+				29920BA42C74027800A873D8 /* IDUpdate.swift */,
+				F30227652D597A760014675C /* UserProfile.swift */,
+				F35789E02CED1F1500EF5FE4 /* Toast.swift */,
+				F3EDE13A2D4B8B9D00D54DF9 /* Tab.swift */,
+				29563F872C4A27B10085F19F /* SelectionState.swift */,
+				29563F892C4A27D40085F19F /* ExpansionState.swift */,
+				F3B536452D78344800CC165F /* BackgroundGradientColors.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		F343D8C72D42342B0097D561 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				29E0D7F12C2A407200B2A5DF /* LabeledBodyText.swift */,
+				29E47D1C2C46F59700698AD9 /* SectionHeaderTitle.swift */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		F343D8CA2D42355E0097D561 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F3A915412D55403E00FA6566 /* SignInWithAppleViewReqpresentable.swift */,
+				F3FC06D02D2D03F600E5E30F /* SearchBarManager.swift */,
+				F3A768C62D419A2A008E8BDB /* AppLogger.swift */,
+				F3A5E69A2D5EA3140022B791 /* CacheManager.swift */,
+				F3A5E69C2D5EC66F0022B791 /* MemoryManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F343D8CB2D4235EE0097D561 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F31CD87F2D30F9A500F9CAF4 /* WebViewService.swift */,
+				29D2BA732C6FDCCA0003F6BC /* DebouncerService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F348604F2D4CC09F00F9CF13 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				29288C692C3521A90097A13B /* TrackerScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F35409C22D31F92600618F86 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				29CEE0B12B97EED10007E152 /* ReviewOverviewScreen.swift */,
+				F3032DB92D5064E6007FD7E2 /* ReviewSettingsScreen.swift */,
+				F3032DBD2D509768007FD7E2 /* ReviewSelectDecksView.swift */,
+				F3032DBF2D5098D5007FD7E2 /* ReviewSelectFlashcardsScreen.swift */,
+				29CCB0732BA3222D009034E7 /* ReviewSessionScreen.swift */,
+				29A7BDEC2BC4C1D70080A239 /* ScoreTransitionScreen.swift */,
+				29563F7D2C48CF4E0085F19F /* ReviewSessionMetricsScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F35409C32D31F9FB00618F86 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				29CEE0B52B97EEEC0007E152 /* SettingsScreen.swift */,
+				F3A97CAF2CD0528900657D9B /* ReauthenticationScreen.swift */,
+				F396A5072CCF716B00A80C10 /* PasswordUpdateScreen.swift */,
+				F3AF428C2D56DF0600D8C8CC /* EmailUpdateScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F386D9452D43DA4600FF638A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F386D90F2D43641700FF638A /* FlashcardKataApp.swift */,
+				F386D9102D43641700FF638A /* ContentView.swift */,
+				F386D9112D43641700FF638A /* HomeScreen.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F386D9772D43DA7B00FF638A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F386D9AC2D43DAAC00FF638A /* Screens */,
+				F386D9AF2D43DAFE00FF638A /* Views */,
+				F386D9AB2D43DA9000FF638A /* Models */,
+				F386D9AD2D43DAC700FF638A /* ViewModels */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F386D9AB2D43DA9000FF638A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F386D9792D43DA8300FF638A /* LandingViewType.swift */,
+				F386D97A2D43DA8300FF638A /* SignInSignUpField.swift */,
+				F386D9782D43DA8300FF638A /* EmailPasswordLoginCredentials.swift */,
+				F386D97B2D43DA8300FF638A /* EmailPasswordSignUpCredentials.swift */,
+				F386D97C2D43DA8300FF638A /* UserProfileFields.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F386D9AC2D43DAAC00FF638A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F386D97E2D43DA8300FF638A /* LandingPageScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F386D9AD2D43DAC700FF638A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F386D9802D43DA8300FF638A /* LandingPageViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F386D9AF2D43DAFE00FF638A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F386D98D2D43DA8300FF638A /* LegalAgreementTextWithWebLink.swift */,
+				F342E1922D5A62D2003DC008 /* LegalAgreementView.swift */,
+				F386D98E2D43DA8300FF638A /* LoginView.swift */,
+				F386D9902D43DA8300FF638A /* SignUpView.swift */,
+				F386D98F2D43DA8300FF638A /* PasswordResetView.swift */,
+				F386D9C52D43DB0F00FF638A /* Components */,
+				F386D9C72D43DB4700FF638A /* ViewModifiers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F386D9C52D43DB0F00FF638A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F386D9C62D43DB1D00FF638A /* AppTitle */,
+				F386D9B42D43DB0400FF638A /* AuthenticationTextField.swift */,
+				F386D9B62D43DB0400FF638A /* AuthenticationSectionTitle.swift */,
+				F32C4C632D6E7A2800848D1E /* SignUpTextFieldsGroup.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F386D9C62D43DB1D00FF638A /* AppTitle */ = {
+			isa = PBXGroup;
+			children = (
+				F386D9B02D43DB0400FF638A /* AppTitleContainerView.swift */,
+				F386D9B12D43DB0400FF638A /* SymbolsTileView.swift */,
+				F386D9B22D43DB0400FF638A /* WordTileView.swift */,
+			);
+			path = AppTitle;
+			sourceTree = "<group>";
+		};
+		F386D9C72D43DB4700FF638A /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				F386D9B82D43DB0400FF638A /* LargeTileStyle.swift */,
+				F386D9B92D43DB0400FF638A /* StandardSectionStyle.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		F386D9CC2D44456000FF638A /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				F34A47BA2D4BE0A000189FAB /* LoadingIcon.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		F38ACAB02D7B251D00AAE246 /* Methods */ = {
+			isa = PBXGroup;
+			children = (
+				F35A10082D1B74970090A756 /* ValidationHelper.swift */,
+				F31CD8792D2FB47B00F9CAF4 /* FetchURLData.swift */,
+				F31CD8772D2F87F400F9CAF4 /* RequestAppReview.swift */,
+				F35A10052D1B6AB10090A756 /* UserValidator.swift */,
+				F3BA6A362D28988A00380D3A /* Pluralize.swift */,
+				F3032DB82D5058DE007FD7E2 /* DateTime */,
+				F3032DB72D5058D6007FD7E2 /* Ordering */,
+			);
+			path = Methods;
+			sourceTree = "<group>";
+		};
+		F38E7D432CB68F5F008939D9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F3CB814F2CCE154400FA4BAB /* SettingsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F39F14F02CEC0B3F001E7318 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				F31CD8812D30FD4F00F9CAF4 /* WebViewAlertModifier.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		F39F14F12CEC0B49001E7318 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F35409BC2D31DF1300618F86 /* TappableLink.swift */,
+				F35409B82D312D3100618F86 /* SettingsListRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F3A768BF2D40F9AD008E8BDB /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				29563F952C4C75B10085F19F /* DatabaseManager.swift */,
+				F34605CC2D5C2058003723FF /* DatabaseManagerProtocol.swift */,
+				F30227692D5A13570014675C /* UserProfileService.swift */,
+				297F21E42CDE9E110099B5FB /* DeckService.swift */,
+				292439EC2CE30EEB00A603C0 /* FlashcardService.swift */,
+				F30227672D59866F0014675C /* ReviewSessionSummaryService.swift */,
+				2965F6A82C63FBC1006C9DDB /* DatabaseManagerError.swift */,
+				F3F9F7AE2D1A3AE700E1D150 /* AppError.swift */,
+				F3EB297F2CD2331800842EAE /* Firestore */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		F3A768DC2D41C884008E8BDB /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				2978A5E12C6BD5060046F822 /* MockData.swift */,
+				F3A768DD2D41C8C4008E8BDB /* Deck-MOCK.swift */,
+				F3A768E02D41DB38008E8BDB /* Flashcard-MOCK.swift */,
+				F3D775BA2D431B13008F29E9 /* MockDatabaseManager.swift */,
+				F3D775B82D42EABD008F29E9 /* SearchResultData-MOCK.swift */,
+				F386D9D12D44549200FF638A /* SubdeckName-MOCK.swift */,
+				F3D6CD652D4B18FD00E62E8A /* FlashcardDisplayModel-MOCK.swift */,
+				F35EBD142D4F4AAE0073EB55 /* DeckNameLabel-MOCK.swift */,
+				F3F43BAD2D525603007F5615 /* ReviewSessionSummary-MOCK.swift */,
+				F3AF42902D57C94800D8C8CC /* ChartItem-MOCK.swift */,
+				F3AF42922D57C96F00D8C8CC /* DeckWithSubdecks-MOCK.swift */,
+				F3AF42942D57C99800D8C8CC /* DeckWithFlashcards-MOCK.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		F3AA35CC2D83053000409D35 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F3AA35CD2D83054100409D35 /* Models */,
+				F3AA35CE2D83054900409D35 /* ViewModels */,
+				F3AA35D12D8305A700409D35 /* Services */,
+				F3AA35CF2D83056A00409D35 /* IntegrationTests */,
+				F3AA35D02D83058A00409D35 /* UITests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		F3AA35CD2D83054100409D35 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F3AA35CE2D83054900409D35 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F3AA35CF2D83056A00409D35 /* IntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = IntegrationTests;
+			sourceTree = "<group>";
+		};
+		F3AA35D02D83058A00409D35 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		F3AA35D12D8305A700409D35 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F3AA39EC2CCDD3A2004498E2 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				F31D0D542D34EB110086F091 /* AuthenticationManager.swift */,
+				F32C4C652D6E8DCC00848D1E /* AuthenticationTask.swift */,
+				F3A97CAD2CD036F900657D9B /* AuthenticationProvider.swift */,
+				F3A97CB12CD0597800657D9B /* AuthenticationError.swift */,
+				F31D0D5C2D38958E0086F091 /* AuthenticationState.swift */,
+				F3A97CAB2CD034C400657D9B /* GoogleSignInHelper.swift */,
+				F32C4C672D75C0AE00848D1E /* GoogleAuthenticationService.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		F3D5C9C62CEC0A7D00350F9C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F31CD87B2D2FB60900F9CAF4 /* FAQ.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F3D6CD582D48721A00E62E8A /* Deck */ = {
+			isa = PBXGroup;
+			children = (
+				F3A768DA2D41C159008E8BDB /* SearachableDeckListView.swift */,
+				299364162C66F10000C5EE5B /* DeckDisclosureGroupView.swift */,
+				2973DBA42C2BC81300EE37F7 /* DeckFormView.swift */,
+			);
+			path = Deck;
+			sourceTree = "<group>";
+		};
+		F3D6CD592D48721F00E62E8A /* Flashcard */ = {
+			isa = PBXGroup;
+			children = (
+				F3A476B52D479DE2000569E0 /* SearchableFlashcardView.swift */,
+				2978A5E52C6D4A590046F822 /* FlashcardFormView.swift */,
+			);
+			path = Flashcard;
+			sourceTree = "<group>";
+		};
+		F3D6CD642D4B16E200E62E8A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				290E14A32C3336C300C9F1A1 /* ReadScreen.swift */,
+				29288C612C350D8A0097A13B /* ReadSettingsScreen.swift */,
+				F3795DE42D4E53B400EA465A /* ReadSelectDecksView.swift */,
+				F35EBD122D4F01170073EB55 /* ReadSelectFlashcardsScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F3DD97F82D4E356A00FACF14 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				29E47D182C46F3C700698AD9 /* HeaderSelectionButton.swift */,
+				29563F8D2C4A28EB0085F19F /* HeaderExpansionButton.swift */,
+				F3DD97F62D4E350F00FACF14 /* HeaderButton.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		F3DD97F92D4E356F00FACF14 /* Checkmark */ = {
+			isa = PBXGroup;
+			children = (
+				29E47D1A2C46F49C00698AD9 /* CheckmarkSelectionButton.swift */,
+				29D3FFAA2C32326B005A051D /* CheckboxButton.swift */,
+			);
+			path = Checkmark;
+			sourceTree = "<group>";
+		};
+		F3DD97FA2D4E35C800FACF14 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				F3DD97F42D4E304300FACF14 /* LabeledToggleRow.swift */,
+				F35C643C2CB6693300CC109A /* PrimaryButton.swift */,
+				F3F514B12CB6729B008C714B /* SecondaryButton.swift */,
+				F308A8DD2D5D628E0092BFFB /* DefaultViewPrimaryButton.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		F3DD97FB2D4E35E100FACF14 /* SelectionExpansion */ = {
+			isa = PBXGroup;
+			children = (
+				F3F404032D4E104E0004D119 /* SelectDecksView.swift */,
+				F3F404052D4E191D0004D119 /* SelectFlashcardsView.swift */,
+				F3F404012D4D14BD0004D119 /* SelectAllScreen.swift */,
+			);
+			path = SelectionExpansion;
+			sourceTree = "<group>";
+		};
+		F3DD97FC2D4E363B00FACF14 /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				297622DB2C8FC7DB007FBF63 /* FullScreenProgressScreen.swift */,
+				F386D9CD2D44471D00FF638A /* OverlayProgressScreen.swift */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		F3DEB2A52D511BF80087DFB9 /* ScoreBar */ = {
+			isa = PBXGroup;
+			children = (
+				29563F712C48A24C0085F19F /* StreakCountView.swift */,
+				290DB6D42C9ABBA200DB4869 /* GeneralScoreView.swift */,
+				299436142BA42943008D7C4F /* TimerView.swift */,
+				F3B5E1E12D50F865002402D1 /* IconView.swift */,
+			);
+			path = ScoreBar;
+			sourceTree = "<group>";
+		};
+		F3E844A02D84287500BB5CD3 /* FlashcardKataSecrets */ = {
+			isa = PBXGroup;
+			children = (
+				F391F1A22D55CF530094335A /* GoogleService-Info.plist */,
+				F386D9C82D443F3600FF638A /* TODO.swift */,
+			);
+			path = FlashcardKataSecrets;
+			sourceTree = "<group>";
+		};
+		F3EB297F2CD2331800842EAE /* Firestore */ = {
+			isa = PBXGroup;
+			children = (
+				F3A768D02D41AD17008E8BDB /* Firestorable.swift */,
+				2928CEF32CDB651400B69AA0 /* FirestoreService.swift */,
+				292439F42CE5746700A603C0 /* FirestoreCollectionPath.swift */,
+				297F21E22CDC83910099B5FB /* FirestoreQueryPredicate.swift */,
+				F3A768C82D41A5DD008E8BDB /* DatabaseError.swift */,
+				292439F02CE56DE500A603C0 /* FirestoreUpdate.swift */,
+			);
+			path = Firestore;
+			sourceTree = "<group>";
+		};
+		F3F404002D4CDE9E0004D119 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				2973DBA82C2DDDC200EE37F7 /* SearchResultsScreen.swift */,
+				292EC9482C24B27400400E6A /* DefaultEmptyScreen.swift */,
+				F308A8DB2D5D5F640092BFFB /* GuestDefaultScreen.swift */,
+				F376987A2D2F6A7D003D70D6 /* WebView.swift */,
+				F3EDE1382D4B845900D54DF9 /* CustomTabBar.swift */,
+				F3DD97FC2D4E363B00FACF14 /* Progress */,
+				F3DD97FB2D4E35E100FACF14 /* SelectionExpansion */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2965F6AD2C644C3A006C9DDB /* FlashcardKata_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2965F6B42C644C3B006C9DDB /* Build configuration list for PBXNativeTarget "FlashcardKata_Tests" */;
+			buildPhases = (
+				2965F6AA2C644C3A006C9DDB /* Sources */,
+				2965F6AB2C644C3A006C9DDB /* Frameworks */,
+				2965F6AC2C644C3A006C9DDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2965F6B32C644C3A006C9DDB /* PBXTargetDependency */,
+			);
+			name = FlashcardKata_Tests;
+			productName = CodingFlashcard_Tests;
+			productReference = 2965F6AE2C644C3A006C9DDB /* FlashcardKata_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		29CEE09D2B97DB4E0007E152 /* FlashcardKata */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29CEE0AC2B97DB4F0007E152 /* Build configuration list for PBXNativeTarget "FlashcardKata" */;
+			buildPhases = (
+				29CEE09A2B97DB4E0007E152 /* Sources */,
+				29CEE09B2B97DB4E0007E152 /* Frameworks */,
+				29CEE09C2B97DB4E0007E152 /* Resources */,
+				F34EAC722D7727E300AAFD0C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlashcardKata;
+			productName = CodingFlashcard;
+			productReference = 29CEE09E2B97DB4E0007E152 /* FlashcardKata.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29CEE0962B97DB4E0007E152 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					2965F6AD2C644C3A006C9DDB = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 29CEE09D2B97DB4E0007E152;
+					};
+					29CEE09D2B97DB4E0007E152 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = 29CEE0992B97DB4E0007E152 /* Build configuration list for PBXProject "FlashcardKata" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29CEE0952B97DB4E0007E152;
+			packageReferences = (
+				F3267A1B2D1A6ED300E8ADFE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				F3267A222D1A6F3A00E8ADFE /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			productRefGroup = 29CEE09F2B97DB4E0007E152 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29CEE09D2B97DB4E0007E152 /* FlashcardKata */,
+				2965F6AD2C644C3A006C9DDB /* FlashcardKata_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2965F6AC2C644C3A006C9DDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F391F1A32D55CF530094335A /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29CEE09C2B97DB4E0007E152 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29CEE0A62B97DB4F0007E152 /* AppIcon.xcassets in Resources */,
+				F35A10172D1F71AB0090A756 /* ColorSet.xcassets in Resources */,
+				2930A4C42C0A8E9B003E4101 /* Images.xcassets in Resources */,
+				F391F1A42D55CF530094335A /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F34EAC722D7727E300AAFD0C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif [ \"${CONFIGURATION}\" == \"Debug\" ]; then\n  if which swiftlint >/dev/null; then\n    swiftlint --fix\n    swiftlint\n  else\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n  fi\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2965F6AA2C644C3A006C9DDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29CEE09A2B97DB4E0007E152 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F38DC4582D546C3F00616830 /* ChartItemDisplay.swift in Sources */,
+				F308A8E02D5D646A0092BFFB /* DefaultViewInlineImage.swift in Sources */,
+				29B5B9522C349AAA00A7883D /* FlashcardTagsDisplay.swift in Sources */,
+				F386D9932D43DA8300FF638A /* LandingViewType.swift in Sources */,
+				F3CB81502CCE154400FA4BAB /* SettingsViewModel.swift in Sources */,
+				F386D9A52D43DA8300FF638A /* SignInSignUpField.swift in Sources */,
+				2978A5E62C6D4A590046F822 /* FlashcardFormView.swift in Sources */,
+				F35EBD132D4F01170073EB55 /* ReadSelectFlashcardsScreen.swift in Sources */,
+				2973DBA72C2CB76600EE37F7 /* TextFieldStyle.swift in Sources */,
+				29D2BA742C6FDCCA0003F6BC /* DebouncerService.swift in Sources */,
+				29CCB0742BA3222D009034E7 /* ReviewSessionScreen.swift in Sources */,
+				F386D9122D43641700FF638A /* FlashcardKataApp.swift in Sources */,
+				F386D9132D43641700FF638A /* HomeScreen.swift in Sources */,
+				F386D9142D43641700FF638A /* ContentView.swift in Sources */,
+				F35789E12CED1F1500EF5FE4 /* Toast.swift in Sources */,
+				290DB6DB2C9AC1CC00DB4869 /* ScoreBarView.swift in Sources */,
+				F3A5E69D2D5EC66F0022B791 /* MemoryManager.swift in Sources */,
+				F3BE5C4C2D53A76E001DDB69 /* ReviewSessionStatisticsGrid.swift in Sources */,
+				29703B842BA912C2002D0094 /* EditDeckScreen.swift in Sources */,
+				F386D9982D43DA8300FF638A /* LegalAgreementTextWithWebLink.swift in Sources */,
+				F3FC06C92D2CA68100E5E30F /* SearchRow.swift in Sources */,
+				F31CD8802D30F9A500F9CAF4 /* WebViewService.swift in Sources */,
+				F386D9A42D43DA8300FF638A /* EmailPasswordLoginCredentials.swift in Sources */,
+				29E47D1D2C46F59700698AD9 /* SectionHeaderTitle.swift in Sources */,
+				2939290C2BC6257400A9AB1F /* DraggableFlashcardView.swift in Sources */,
+				F3A476B42D479D41000569E0 /* FlashcardsListViewModel.swift in Sources */,
+				F386D9BF2D43DB0400FF638A /* AuthenticationSectionTitle.swift in Sources */,
+				290E14A42C3336C300C9F1A1 /* ReadScreen.swift in Sources */,
+				F32C4C662D6E8DCC00848D1E /* AuthenticationTask.swift in Sources */,
+				F386D9C22D43DB0400FF638A /* LargeTileStyle.swift in Sources */,
+				292439F52CE5746700A603C0 /* FirestoreCollectionPath.swift in Sources */,
+				2960F4442C3F9DF400D494A7 /* FlashcardModePicker.swift in Sources */,
+				29E47D192C46F3C700698AD9 /* HeaderSelectionButton.swift in Sources */,
+				F3D775BF2D4352ED008F29E9 /* OrderItemsByKeyPath.swift in Sources */,
+				F36512062D13875C0026235F /* ReviewModeSelectionView.swift in Sources */,
+				F3A811C02CAF575900FEFF2A /* ReviewViewModel.swift in Sources */,
+				F32C4C642D6E7A2800848D1E /* SignUpTextFieldsGroup.swift in Sources */,
+				2922104D2C1CFD04003FA3FF /* View+Extensions.swift in Sources */,
+				290E14AE2C33D46A00C9F1A1 /* FlashcardTagView.swift in Sources */,
+				F3BA6A372D28988A00380D3A /* Pluralize.swift in Sources */,
+				29563F802C4904960085F19F /* ScoreSummaryBox.swift in Sources */,
+				F386D9BE2D43DB0400FF638A /* WordTileView.swift in Sources */,
+				F31D0D5D2D38958E0086F091 /* AuthenticationState.swift in Sources */,
+				F30A8FF32D58099900C0E6BA /* Flashcard-MOCK.swift in Sources */,
+				F3DEB2A72D51B43C0087DFB9 /* DeckCoverBackgroundGradient.swift in Sources */,
+				F308A8DC2D5D5F640092BFFB /* GuestDefaultScreen.swift in Sources */,
+				29CEE0B42B97EEE00007E152 /* TrackerSummaryView.swift in Sources */,
+				2960F4382C3F94AB00D494A7 /* ReviewModeTile.swift in Sources */,
+				F3A97CB02CD0528900657D9B /* ReauthenticationScreen.swift in Sources */,
+				F3D6CD682D4B5F1C00E62E8A /* BackgroundGradient.swift in Sources */,
+				2973DBA52C2BC81300EE37F7 /* DeckFormView.swift in Sources */,
+				291F8D0F2B996FBB00145AD0 /* AddFlashcardScreen.swift in Sources */,
+				29288C6A2C3521A90097A13B /* TrackerScreen.swift in Sources */,
+				299436152BA42943008D7C4F /* TimerView.swift in Sources */,
+				29563F722C48A24C0085F19F /* StreakCountView.swift in Sources */,
+				F35EBD192D4F79530073EB55 /* ListSectionHeaderStyle.swift in Sources */,
+				F30A8FFA2D5809BF00C0E6BA /* ChartItem-MOCK.swift in Sources */,
+				F32C4C682D75C0AE00848D1E /* GoogleAuthenticationService.swift in Sources */,
+				F3710C722D2867EC006CFD5E /* Theme.swift in Sources */,
+				F31CD8782D2F87F400F9CAF4 /* RequestAppReview.swift in Sources */,
+				2922104B2C1CFC27003FA3FF /* Font+Extensions.swift in Sources */,
+				F3F9F7AF2D1A3AE700E1D150 /* AppError.swift in Sources */,
+				292439EF2CE357D800A603C0 /* GroupByID.swift in Sources */,
+				F386D9952D43DA8300FF638A /* SignUpView.swift in Sources */,
+				F376987B2D2F6A7D003D70D6 /* WebView.swift in Sources */,
+				2902E6C62C8AB7D3004E2B11 /* ReadViewModel.swift in Sources */,
+				F3BE5C4E2D53A79A001DDB69 /* ChartItem.swift in Sources */,
+				F35A10102D1F6CC40090A756 /* ToolbarButtonTemplates.swift in Sources */,
+				F386D99B2D43DA8300FF638A /* LoginView.swift in Sources */,
+				F3EDE13B2D4B8B9D00D54DF9 /* Tab.swift in Sources */,
+				29563F7C2C48C8DB0085F19F /* ScoreType.swift in Sources */,
+				F3A476B82D479E57000569E0 /* FlashcardCoverView.swift in Sources */,
+				F3A768C92D41A5DD008E8BDB /* DatabaseError.swift in Sources */,
+				F3B5E1E22D50F865002402D1 /* IconView.swift in Sources */,
+				F3A915422D55403E00FA6566 /* SignInWithAppleViewReqpresentable.swift in Sources */,
+				F3F9F7AD2D13BA2200E1D150 /* CompactLabel.swift in Sources */,
+				290DB6D52C9ABBA200DB4869 /* GeneralScoreView.swift in Sources */,
+				F3DA1E772CB8F5DB0067C735 /* SectionShadow.swift in Sources */,
+				F31CD87A2D2FB47B00F9CAF4 /* FetchURLData.swift in Sources */,
+				F386D9BC2D43DB0400FF638A /* BackgroundImage.swift in Sources */,
+				F34A47BB2D4BE0A000189FAB /* LoadingIcon.swift in Sources */,
+				F3FC06D12D2D03F600E5E30F /* SearchBarManager.swift in Sources */,
+				F3153ECC2D27223E0021FC41 /* SecondaryButtonStyle.swift in Sources */,
+				F3F404062D4E191D0004D119 /* SelectFlashcardsView.swift in Sources */,
+				2971F20D2C90FDA40052BA10 /* DeckWithSubdecks.swift in Sources */,
+				F35409BD2D31DF1300618F86 /* TappableLink.swift in Sources */,
+				F386D9C02D43DB0400FF638A /* SymbolsTileView.swift in Sources */,
+				F3B536462D78344800CC165F /* BackgroundGradientColors.swift in Sources */,
+				F34605CD2D5C2058003723FF /* DatabaseManagerProtocol.swift in Sources */,
+				297F21E32CDC83910099B5FB /* FirestoreQueryPredicate.swift in Sources */,
+				F3D775B72D42E124008F29E9 /* DecksListViewModel.swift in Sources */,
+				29563F7E2C48CF4E0085F19F /* ReviewSessionMetricsScreen.swift in Sources */,
+				290DB6D32C9AB9B100DB4869 /* ReviewViewState.swift in Sources */,
+				F308A8DE2D5D628E0092BFFB /* DefaultViewPrimaryButton.swift in Sources */,
+				F3032DB32D5056F2007FD7E2 /* ReviewSettingsSections.swift in Sources */,
+				F3F43BA82D5238CF007F5615 /* ReviewFlashcardCardsView.swift in Sources */,
+				29D3FFAF2C3260FC005A051D /* ReadingListView.swift in Sources */,
+				292EC9492C24B27400400E6A /* DefaultEmptyScreen.swift in Sources */,
+				F3D775BD2D432F51008F29E9 /* OrderDecksByParent.swift in Sources */,
+				F30A8FF72D5809AF00C0E6BA /* FlashcardDisplayModel-MOCK.swift in Sources */,
+				F386D99D2D43DA8300FF638A /* UserProfileFields.swift in Sources */,
+				299364172C66F10000C5EE5B /* DeckDisclosureGroupView.swift in Sources */,
+				F3F43BAA2D525373007F5615 /* SessionTime.swift in Sources */,
+				F3D6CD5D2D48EB9600E62E8A /* FlashcardFormViewModel.swift in Sources */,
+				29CDE7482B9ADAA3009C25FB /* TrackerViewModel.swift in Sources */,
+				F3F404042D4E104E0004D119 /* SelectDecksView.swift in Sources */,
+				F342E1932D5A62D2003DC008 /* LegalAgreementView.swift in Sources */,
+				2930A4C92C0D3064003E4101 /* Flashcard.swift in Sources */,
+				F30227662D597A760014675C /* UserProfile.swift in Sources */,
+				F3A97CAE2CD036F900657D9B /* AuthenticationProvider.swift in Sources */,
+				29B5B9502C34984F00A7883D /* FlashcardTagFactory.swift in Sources */,
+				F35409B92D312D3100618F86 /* SettingsListRow.swift in Sources */,
+				291F8D0B2B995D7C00145AD0 /* FlashcardListScreen.swift in Sources */,
+				29C38A042C22872200BB44B8 /* DesignConstants.swift in Sources */,
+				F35A101B2D238BF20090A756 /* ColorPalette.swift in Sources */,
+				F3A768C72D419A2A008E8BDB /* AppLogger.swift in Sources */,
+				290E14A82C33732F00C9F1A1 /* FlashcardCardView.swift in Sources */,
+				2928CEF42CDB651400B69AA0 /* FirestoreService.swift in Sources */,
+				2973DBA92C2DDDC200EE37F7 /* SearchResultsScreen.swift in Sources */,
+				291F8D072B98791500145AD0 /* AddDeckScreen.swift in Sources */,
+				F3EDE1392D4B845900D54DF9 /* CustomTabBar.swift in Sources */,
+				F30A8FFB2D5809C400C0E6BA /* DeckWithSubdecks-MOCK.swift in Sources */,
+				29E0CA642BB77A5F002E08C6 /* FlashcardCardScreen.swift in Sources */,
+				2965F69B2C5D6C5B006C9DDB /* FlashcardUpdate.swift in Sources */,
+				29E0D7F22C2A407200B2A5DF /* LabeledBodyText.swift in Sources */,
+				29D3FFA92C322AC7005A051D /* ReviewSettings.swift in Sources */,
+				290190C62BD70F9B003BA6A0 /* DecksStudiedChart.swift in Sources */,
+				F3BE5C4A2D5394A3001DDB69 /* TrackerStatisticsView.swift in Sources */,
+				F3BE5C482D53940E001DDB69 /* TrackerStatistic.swift in Sources */,
+				F36B64C62D60FA56004F970B /* FlashcardFormField.swift in Sources */,
+				29CEE0B62B97EEEC0007E152 /* SettingsScreen.swift in Sources */,
+				F386D9A22D43DA8300FF638A /* LandingPageViewModel.swift in Sources */,
+				292439F12CE56DE500A603C0 /* FirestoreUpdate.swift in Sources */,
+				F3A97CB22CD0597800657D9B /* AuthenticationError.swift in Sources */,
+				F35789E32CED240000EF5FE4 /* ToastView.swift in Sources */,
+				29B0F77A2C3F0C2C00F30CC5 /* GlobalNavigationBarStyle.swift in Sources */,
+				F396A5082CCF716B00A80C10 /* PasswordUpdateScreen.swift in Sources */,
+				296603EE2C98EE3E00CC0C5B /* SelectAllHelper.swift in Sources */,
+				29C38A0D2C22A85200BB44B8 /* ToolbarBackButton.swift in Sources */,
+				F3A768DB2D41C159008E8BDB /* SearachableDeckListView.swift in Sources */,
+				29D3FFAB2C32326B005A051D /* CheckboxButton.swift in Sources */,
+				F386D9CE2D44471D00FF638A /* OverlayProgressScreen.swift in Sources */,
+				29288C622C350D8A0097A13B /* ReadSettingsScreen.swift in Sources */,
+				F3AF428F2D57652200D8C8CC /* ModifyActionButton.swift in Sources */,
+				F30A8FF82D5809B400C0E6BA /* DeckNameLabel-MOCK.swift in Sources */,
+				29E47D1B2C46F49C00698AD9 /* CheckmarkSelectionButton.swift in Sources */,
+				F3032DC02D5098D5007FD7E2 /* ReviewSelectFlashcardsScreen.swift in Sources */,
+				F3F404022D4D14BD0004D119 /* SelectAllScreen.swift in Sources */,
+				F396A5132CCF90C900A80C10 /* TopViewControllerHelper.swift in Sources */,
+				F354BF212D4F84F4000416D3 /* SoftGradient.swift in Sources */,
+				F30A8FF62D5809AA00C0E6BA /* SubdeckName-MOCK.swift in Sources */,
+				296603F02C98FB1800CC0C5B /* ExpandAllHelper.swift in Sources */,
+				F3153ED22D272F310021FC41 /* PrimaryButtonStyle.swift in Sources */,
+				F3DD97F72D4E350F00FACF14 /* HeaderButton.swift in Sources */,
+				F31CD87C2D2FB60900F9CAF4 /* FAQ.swift in Sources */,
+				F3F43BA22D52348B007F5615 /* ToolbarExitButton.swift in Sources */,
+				29CEE0B22B97EED10007E152 /* ReviewOverviewScreen.swift in Sources */,
+				29CEE0B02B97EEBC0007E152 /* DecksListScreen.swift in Sources */,
+				29BA9A212C3CA030009C5874 /* ToolbarNextButton.swift in Sources */,
+				F3795DE52D4E53B400EA465A /* ReadSelectDecksView.swift in Sources */,
+				2902E6C42C8AB616004E2B11 /* CardSort.swift in Sources */,
+				F386D9D02D444FC000FF638A /* SubdeckName.swift in Sources */,
+				F3FC06C22D28B4A700E5E30F /* AlertHelper.swift in Sources */,
+				290E14B02C33EDEC00C9F1A1 /* FlowLayout.swift in Sources */,
+				29BA9A192C35DBCD009C5874 /* FlashcardLayout.swift in Sources */,
+				2973DBB22C2E413100EE37F7 /* DifficultyLevel.swift in Sources */,
+				F3D6CD632D4A652900E62E8A /* EditSubdeckNameView.swift in Sources */,
+				291190302C8BAB520087B6D6 /* FlashcardReadingView.swift in Sources */,
+				F3B2CA6A2CB929EC00ABCEEF /* TimeConverter.swift in Sources */,
+				29C38A062C22874400BB44B8 /* ContentConstants.swift in Sources */,
+				F386D9C12D43DB0400FF638A /* AppTitleContainerView.swift in Sources */,
+				F386D99E2D43DA8300FF638A /* PasswordResetView.swift in Sources */,
+				2960F43C2C3F9B5D00D494A7 /* ReviewSettingsSection.swift in Sources */,
+				2987A3F42C2B79240091D8CD /* BadgeLabel.swift in Sources */,
+				2918BE5D2BAB9EE800EA61B6 /* EditFlashcardScreen.swift in Sources */,
+				F3153EC92D2720C10021FC41 /* PrimaryTextfieldStyle.swift in Sources */,
+				292EC93D2C23D60900400E6A /* AddSubDecksDisplay.swift in Sources */,
+				F3EDE13D2D4BA04E00D54DF9 /* DeckCoverButton.swift in Sources */,
+				F3AF428D2D56DF0600D8C8CC /* EmailUpdateScreen.swift in Sources */,
+				F35A10092D1B74970090A756 /* ValidationHelper.swift in Sources */,
+				292EC9472C240DF500400E6A /* CoverShadow.swift in Sources */,
+				2973DBB02C2E40B500EE37F7 /* ReviewSessionSummary.swift in Sources */,
+				292EC93F2C23D69700400E6A /* AddDecksDisplay.swift in Sources */,
+				297F21E52CDE9E110099B5FB /* DeckService.swift in Sources */,
+				2965F69D2C5D6CE5006C9DDB /* DeckUpdate.swift in Sources */,
+				F30A8FF42D58099F00C0E6BA /* MockDatabaseManager.swift in Sources */,
+				29563F842C49D6720085F19F /* MetricCard.swift in Sources */,
+				F35A10062D1B6AB10090A756 /* UserValidator.swift in Sources */,
+				F3BFC8522D51D042008148DC /* ApplySearchable.swift in Sources */,
+				29288C602C34DA820097A13B /* ViewSizeKey.swift in Sources */,
+				29D3FFA72C322A32005A051D /* FlashcardMode.swift in Sources */,
+				F3F9F7B12D1A3DB100E1D150 /* ErrorView.swift in Sources */,
+				29563F882C4A27B10085F19F /* SelectionState.swift in Sources */,
+				F3032DBA2D5064E6007FD7E2 /* ReviewSettingsScreen.swift in Sources */,
+				297622DC2C8FC7DB007FBF63 /* FullScreenProgressScreen.swift in Sources */,
+				F30A8FF52D5809A500C0E6BA /* SearchResultData-MOCK.swift in Sources */,
+				29E0D7F02C2A2AE300B2A5DF /* ReviewMode.swift in Sources */,
+				F3F514B22CB6729B008C714B /* SecondaryButton.swift in Sources */,
+				F3BE5C462D538928001DDB69 /* StatisticBoxView.swift in Sources */,
+				29920BA52C74027800A873D8 /* IDUpdate.swift in Sources */,
+				F31D0D572D35D75E0086F091 /* UserDefaultsKeys.swift in Sources */,
+				F3A476B62D479DE2000569E0 /* SearchableFlashcardView.swift in Sources */,
+				297925CE2C8B927900B1E88B /* DeckNameLabel.swift in Sources */,
+				29563F942C4C73DD0085F19F /* Deck.swift in Sources */,
+				F3A768D42D41AD17008E8BDB /* Firestorable.swift in Sources */,
+				29563F8A2C4A27D40085F19F /* ExpansionState.swift in Sources */,
+				F31CD87E2D2FBF5C00F9CAF4 /* HelpCenterView.swift in Sources */,
+				29563F962C4C75B10085F19F /* DatabaseManager.swift in Sources */,
+				F386D9BB2D43DB0400FF638A /* AuthenticationTextField.swift in Sources */,
+				F386D9992D43DA8300FF638A /* EmailPasswordSignUpCredentials.swift in Sources */,
+				F31D0D552D34EB110086F091 /* AuthenticationManager.swift in Sources */,
+				F35C643D2CB6693300CC109A /* PrimaryButton.swift in Sources */,
+				F3FC06CD2D2CA8B900E5E30F /* SearchResultData.swift in Sources */,
+				F30A8FF92D5809B900C0E6BA /* ReviewSessionSummary-MOCK.swift in Sources */,
+				F30A8FF12D58098E00C0E6BA /* MockData.swift in Sources */,
+				F3FC06CF2D2D032600E5E30F /* SearchState.swift in Sources */,
+				F3D6CD5B2D4890DD00E62E8A /* OrderFlashcardsByDeckID.swift in Sources */,
+				F302276A2D5A13570014675C /* UserProfileService.swift in Sources */,
+				F31CD8822D30FD4F00F9CAF4 /* WebViewAlertModifier.swift in Sources */,
+				F30A8FF22D58099300C0E6BA /* Deck-MOCK.swift in Sources */,
+				299364192C6A814500C5EE5B /* Date+Extensions.swift in Sources */,
+				29563F6C2C487F800085F19F /* ReviewProgressBar.swift in Sources */,
+				297925D02C8BA0AC00B1E88B /* FlashcardDisplayModel.swift in Sources */,
+				F386D9972D43DA8300FF638A /* LandingPageScreen.swift in Sources */,
+				F3A97CAC2CD034C500657D9B /* GoogleSignInHelper.swift in Sources */,
+				F35A101F2D23EA900090A756 /* GeometryReaderModifier.swift in Sources */,
+				F3032DBE2D509768007FD7E2 /* ReviewSelectDecksView.swift in Sources */,
+				F3D6CD5F2D4A07C900E62E8A /* AreDatesEqualIgnoringTime.swift in Sources */,
+				29C211442C93A300004A7848 /* DeckWithFlashcards.swift in Sources */,
+				F3DD97F52D4E304300FACF14 /* LabeledToggleRow.swift in Sources */,
+				F386D9BD2D43DB0400FF638A /* StandardSectionStyle.swift in Sources */,
+				292439ED2CE30EEB00A603C0 /* FlashcardService.swift in Sources */,
+				F386D9D42D4460E300FF638A /* DeckFormViewModel.swift in Sources */,
+				F3D6CD612D4A64CA00E62E8A /* EditSubdeckScreen.swift in Sources */,
+				F30A8FFC2D5809CA00C0E6BA /* DeckWithFlashcards-MOCK.swift in Sources */,
+				29A7BDED2BC4C1D70080A239 /* ScoreTransitionScreen.swift in Sources */,
+				2965F6A92C63FBC1006C9DDB /* DatabaseManagerError.swift in Sources */,
+				29563F8E2C4A28EB0085F19F /* HeaderExpansionButton.swift in Sources */,
+				F3A5E69B2D5EA3140022B791 /* CacheManager.swift in Sources */,
+				F30227682D59866F0014675C /* ReviewSessionSummaryService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2965F6B32C644C3A006C9DDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29CEE09D2B97DB4E0007E152 /* FlashcardKata */;
+			targetProxy = 2965F6B22C644C3A006C9DDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2965F6B52C644C3B006C9DDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.flashcardkata-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlashcardKata.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FlashcardKata";
+			};
+			name = Debug;
+		};
+		2965F6B62C644C3B006C9DDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.flashcardkata-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlashcardKata.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FlashcardKata";
+			};
+			name = Release;
+		};
+		29CEE0AA2B97DB4F0007E152 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		29CEE0AB2B97DB4F0007E152 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29CEE0AD2B97DB4F0007E152 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FlashcardKata/FlashcardKata.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"FlashcardKata/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FlashcardKata/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Flashcard Kata";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flashcardkata;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		29CEE0AE2B97DB4F0007E152 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FlashcardKata/FlashcardKata.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"FlashcardKata/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FlashcardKata/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Flashcard Kata";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flashcardkata;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2965F6B42C644C3B006C9DDB /* Build configuration list for PBXNativeTarget "FlashcardKata_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2965F6B52C644C3B006C9DDB /* Debug */,
+				2965F6B62C644C3B006C9DDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29CEE0992B97DB4E0007E152 /* Build configuration list for PBXProject "FlashcardKata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29CEE0AA2B97DB4F0007E152 /* Debug */,
+				29CEE0AB2B97DB4F0007E152 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29CEE0AC2B97DB4F0007E152 /* Build configuration list for PBXNativeTarget "FlashcardKata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29CEE0AD2B97DB4F0007E152 /* Debug */,
+				29CEE0AE2B97DB4F0007E152 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F3267A1B2D1A6ED300E8ADFE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.28.0;
+			};
+		};
+		F3267A222D1A6F3A00E8ADFE /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = exactVersion;
+				version = 7.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F3267A1C2D1A6ED300E8ADFE /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3267A1B2D1A6ED300E8ADFE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		F3267A1E2D1A6ED300E8ADFE /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3267A1B2D1A6ED300E8ADFE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		F3267A202D1A6ED300E8ADFE /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3267A1B2D1A6ED300E8ADFE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		F3267A232D1A6F3A00E8ADFE /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3267A222D1A6F3A00E8ADFE /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		F3267A252D1A6F3A00E8ADFE /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3267A222D1A6F3A00E8ADFE /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 29CEE0962B97DB4E0007E152 /* Project object */;
+}

@@ -1,0 +1,33 @@
+# Ignore compiled files
+*.o
+*.out
+*.exe
+
+# Ignore Xcode specific files
+*.xcuserstate
+*.xcodeproj/project.xcworkspace/
+Pods/
+
+# Ignore environment files
+.env
+*.xcuserstate
+*.xcworkspace
+*.xcuserdata
+*.hmap
+.idea/
+.DS_Store
+
+# Ignore build artifacts and data
+build/
+DerivedData/
+*.log
+*.sqlite
+*.db
+
+# Ignore sensitive or future development files
+FutureDevelopment/
+FlashcardKataSecrets/
+
+# Ignore test files
+Tests/
+
