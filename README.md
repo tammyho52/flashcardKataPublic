@@ -37,7 +37,7 @@ You can download the app [here](https://apps.apple.com/us/app/flashcard-kata/id6
 - Created wireframes by hand to plan the app's layout and flow, then used Figma to design app assets.
 - Architecture: MVVM with Managers (Database, Authentication), Services (Firestore), and Helpers for better separation of concerns and maintainability.
 - Frontend UI, consisting of 25+ screens and 20+ reusable components, is built with SwiftUI & UIKit.
-- Authentication (password, Apple, Google) is implemented using Firebase Authentication, accessed via the Firebase iOS SDK.
+- Authentication (Apple, Google, email/password) is implemented using Firebase Authentication, accessed via the Firebase iOS SDK.
 - Backend data is stored in a Firebase Firestore database, accessed using the Firebase iOS SDK.
 - Network requests are sent using URLRequest and called with Swift Concurrency.
 - Design ensures the app remains scalable, maintainable, and easily extensible with reusable components.
@@ -60,7 +60,7 @@ MVVM components are structured based on the below:
 - Shared components for reusability 
 
 To further enhance separation of concerns, the app utilizes Managers and Services. 
-- Managers abstract external dependencies like Firebase Firestore for database storage and Firebase Authentication, and handle individualized features like search and caching. 
+- Managers abstract external dependencies like Firebase Firestore for database storage and Firebase Authentication for user authentication, and handle individualized features like search and caching. 
 - Services include specific functionalities, such as:
   - Displaying web view and handling debouncing
   - `FirestoreService` is a reusable service that prevents redundant Firestore CRUD implementations. Models that interact with Firestore each build separate services using `FirestoreService`.
@@ -70,14 +70,14 @@ To further enhance separation of concerns, the app utilizes Managers and Service
 
 **Component Breakdown**
 
-To UI consistency and reusability, common views, components, and view modifiers are stored under the `Shared` folder. 
+To ensure UI consistency and reusability, common views, components, and view modifiers are stored under the `Shared` folder. 
 
 Notable reusable components include: 
 - Default Empty Views & Guest Views
   - Handle cases where no user data exists (i.e. no decks or flashcards have been created) 
   - Supports guest user access (i.e. unauthenticated users)
-- Bulk Actions such as reusable expand all and select all functionalities for decks and flashcards used for both `Read` and `Review` tabs.
-- Themed Navigation Bar Style: `ColoredGlobalNavigationBarStyle` supports custom gradient backgrounds using 3 colors for each Tab. The navigation bar style dynamically adjusts to ensure content visibility behind the custom tab bar.
+- Bulk Actions such as reusable expand all and select all functionalities for decks and flashcards, used in both `Read` and `Review` tabs.
+- Themed Navigation Bar Style: `ColoredGlobalNavigationBarStyle` supports custom gradient backgrounds using 3 colors for each Tab. The navigation bar style dynamically adjusts the Tab's views to ensure content visibility behind the custom tab bar.
 
 ---
 
