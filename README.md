@@ -47,24 +47,27 @@ You can download the app [here](https://apps.apple.com/us/app/flashcard-kata/id6
 
 ## Design Decisions
 
-**MVVM with Services and Managers**
+**MVVM with Managers and Services**
 
-The MVVM (Model-View-ViewModel) pattern was chosen for testability, maintainability, and scalability. 
+The MVVM (Model-View-ViewModel) architectural pattern was chosen for maintainability, scalability, and testability.
 - Views (primarily SwiftUI-based) handle UI presentation.
-- ViewModels manages UI logic and state.
+- ViewModels manage UI logic and state.
 - Models represent data structures.
 
-MVVM components are structured based on the below:
-- `LandingPageScreen` (pre-authentication)
-- By `HomeScreen` tabs (post-authentication)
-- Shared components for reusability 
+Each section of the app follows the MVVM structure:
+- `LandingPageScreen`: Implements MVVM for pre-authentication features (e.g. sign up, sign in).
+- `HomeScreen` tabs: Applies MVVM for post-authentication features (e.g. core deck and flashcard functionalities).
+- Shared components: Provides common MVVM components to ensure consistency and reusability across the app.
 
 To further enhance separation of concerns, the app utilizes Managers and Services. 
-- Managers abstract external dependencies like Firebase Firestore for database storage and Firebase Authentication for user authentication, and handle individualized features like search and caching. 
-- Services include specific functionalities, such as:
-  - Displaying web view and handling debouncing
-  - `FirestoreService` is a reusable service that prevents redundant Firestore CRUD implementations. Models that interact with Firestore each build separate services using `FirestoreService`.
-  - `DatabaseManager` is an abstraction layer that enables swapping database implementations with minimal impact.
+- Managers abstract external dependencies like Firebase Firestore for database storage and Firebase Authentication for user authentication, and manage individualized features like search and caching.
+  - `DatabaseManager` acts as an abstraction layer that allows easy swapping of database implementations with minimal impact on the app.
+  - `SearchBarManager` manages reusable search bar state across deck and flashcard lists, inluding the search text, search results, and search process state.
+  - `CacheManager` provides reusable caching for items like decks and flashcards, optimizing data retrieval and performance. 
+- Services encapsulate specific functionalities, such as:
+  - Displaying web views for loading URLs, such as Terms & Conditions and Private Policy.
+  - Handling search text debouncing to improve search performance.
+  - `FirestoreService` provides a reusable service to prevent redundant Firestore CRUD implementations. Models that interact with Firestore each leverage `FirestoreService` to manage data interactions.
   
 ---
 
@@ -73,27 +76,29 @@ To further enhance separation of concerns, the app utilizes Managers and Service
 To ensure UI consistency and reusability, common views, components, and view modifiers are stored under the `Shared` folder. 
 
 Notable reusable components include: 
-- Default Empty Views & Guest Views
-  - Handle cases where no user data exists (i.e. no decks or flashcards have been created) 
-  - Supports guest user access (i.e. unauthenticated users)
-- Bulk Actions such as reusable expand all and select all functionalities for decks and flashcards, used in both `Read` and `Review` tabs.
-- Themed Navigation Bar Style: `ColoredGlobalNavigationBarStyle` supports custom gradient backgrounds using 3 colors for each Tab. The navigation bar style dynamically adjusts the Tab's views to ensure content visibility behind the custom tab bar.
+- Default Empty Views & Guest Views:
+  - Handle cases where no user data exists (e.g. when no decks or flashcards have been created).
+  - Support guest user access (e.g. for unauthenticated users).
+- Bulk Actions:
+  - Reusable functionalities, such as "expand all" and "select all" for decks and flashcard selection for review, utilized across both `Read` and `Review` tabs.
+- Themed Navigation Bar Style: 
+  - `ColoredGlobalNavigationBarStyle` supports custom gradient backgrounds using 3 colors for each Tab. The navigation bar style dynamically adjusts the Tab's views to ensure content visibility behind the custom tab bar.
 
 ---
 
 **Reusable Data & Helpers**
-- `AppConstants` defines design, content, and color constants for consistency.
-- Mock data supports Xcode previews for UI development. 
-- Helpers provide self-contained utility functions like form validation, time conversion, and deck ordering.
+- `AppConstants`: Defines design, content, and color constants to ensure consistency across the app.
+- Mock Data: Provides sample data to facilitate efficient Xcode previews for UI development. 
+- Helpers: Provide self-contained utility functions for tasks such as form validation, time conversion, and deck ordering.
 
 ---
 
 **State Management**
 
-The app leverages Swift Concurrency (async/await) for efficient state handling, with Combine used selectively for functions such as search bar updates, form field change monitoring with debouncing, and review session timer management.
+The app leverages Swift Concurrency (async/await) for efficient state handling, while Combine is used selectively for tasks like search bar updates, form field change monitoring with debouncing, and review session timer management.
 
 SwiftUI property wrappers ensure reactive state updates:
-- @State and @StateObject for UI-related state.
+- @State and @StateObject for UI-related state management.
 - @Binding, @Published, and ObservableObject for reactive data flow.
 
 ---
