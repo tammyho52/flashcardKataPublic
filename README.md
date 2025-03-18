@@ -99,7 +99,7 @@ The app leverages Swift Concurrency (async/await) for efficient state handling, 
 
 SwiftUI property wrappers ensure reactive state updates:
 - @State and @StateObject for UI-related state management.
-- @Binding, @Published, and ObservableObject for reactive data flow.
+- @Binding, @Published, @ObservedObject, and ObservableObject for reactive data flow.
 
 ---
 
