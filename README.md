@@ -61,13 +61,13 @@ Each section of the app follows the MVVM structure:
 
 To further enhance separation of concerns, the app utilizes Managers and Services. 
 - Managers abstract external dependencies like Firebase Firestore for database storage and Firebase Authentication for user authentication, and manage individualized features like search and caching.
-  - `DatabaseManager` acts as an abstraction layer that allows easy swapping of database implementations with minimal impact on the app.
-  - `SearchBarManager` manages reusable search bar state across deck and flashcard lists, inluding the search text, search results, and search process state.
-  - `CacheManager` provides reusable caching for items like decks and flashcards, optimizing data retrieval and performance. 
+  - `DatabaseManager`: Abstraction layer that allows easy swapping of database implementations with minimal impact on the app.
+  - `SearchBarManager`: Manages reusable search bar state across deck and flashcard lists, inluding the search text, search results, and search process state.
+  - `CacheManager`: Provides reusable caching for items like decks and flashcards, optimizing data retrieval and performance. 
 - Services encapsulate specific functionalities, such as:
-  - Displaying web views for loading URLs, such as Terms & Conditions and Private Policy.
-  - Handling search text debouncing to improve search performance.
-  - `FirestoreService` provides a reusable service to prevent redundant Firestore CRUD implementations. Models that interact with Firestore each leverage `FirestoreService` to manage data interactions.
+  - `WebViewService`: Manages the display of web views for loading URLs, such as Terms & Conditions and Private Policy.
+  - `DebouncerService`: Handles debounced form validation, reducing unnecessary processing by delaying validation checks.
+  - `FirestoreService`: Provides a reusable service to prevent redundant Firestore CRUD implementations. Models that interact with Firestore each leverage `FirestoreService` to manage data interactions.
   
 ---
 
@@ -76,13 +76,13 @@ To further enhance separation of concerns, the app utilizes Managers and Service
 To ensure UI consistency and reusability, common views, components, and view modifiers are stored under the `Shared` folder. 
 
 Notable reusable components include: 
-- Default Empty Views & Guest Views:
-  - Handle cases where no user data exists (e.g. when no decks or flashcards have been created).
-  - Support guest user access (e.g. for unauthenticated users).
+- Customizable Default Empty Views & Guest Views:
+  - `DefaultEmptyScreen`: Displays an empty state when no user data exists (e.g. no decks or flashcards have been created), with navigation buttons prompting the user to create new content.
+  - `GuestDefaultScreen`: Supports guest user access (e.g. for unauthenticated users) and provides buttons to encourage account creation to unlock all app features.
 - Bulk Actions:
-  - Reusable functionalities, such as "expand all" and "select all" for decks and flashcard selection for review, utilized across both `Read` and `Review` tabs.
+  - `SelectAllScreen`: Provides reusable functionality, including `ExpandAllHelper` and `SelectAllHelper` for choosing decks and flashcard for review. This functionality is used across both `Read` and `Review` tabs.
 - Themed Navigation Bar Style: 
-  - `ColoredGlobalNavigationBarStyle` supports custom gradient backgrounds using 3 colors for each Tab. The navigation bar style dynamically adjusts the Tab's views to ensure content visibility behind the custom tab bar.
+  - `ColoredGlobalNavigationBarStyle`: Supports custom gradient backgrounds using 3 colors for each Tab. The navigation bar style dynamically adjusts the Tab's views to ensure content visibility behind the custom tab bar.
 
 ---
 
