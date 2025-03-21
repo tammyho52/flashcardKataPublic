@@ -67,7 +67,7 @@ To further enhance separation of concerns, the app utilizes Managers and Service
 - Services encapsulate specific functionalities, such as:
   - `WebViewService`: Manages the display of web views for loading URLs, such as Terms & Conditions and Private Policy.
   - `DebouncerService`: Handles debounced form validation, reducing unnecessary processing by delaying validation checks.
-  - `FirestoreService`: Provides a reusable service to prevent redundant Firestore CRUD implementations. Models that interact with Firestore each leverage `FirestoreService` to manage data interactions.
+  - `FirestoreService`: Provides a reusable service that centralizes Firestore CRUD operations, preventing redundant implementations. Services that interact with Firestore, such as `DeckService` and `FlashcardService`, inject `FirestoreService` as a dependency to manage data retrieval, updates, and persistence efficiently.
   
 ---
 
