@@ -215,4 +215,4 @@ By default, the app is configured to use mock data for previews. No external set
 6. Provisioning Profile Setup: Ensure that your app’s provisioning profile includes the necessary capabilities: Push Notifications, Sign In with Apple.
 
 ## License
-This project is licensed under a **private license**. Unauthorized distribution, modification, or commercial use is prohibited. For inquiries about usage rights, please contact flashcardkata@gmail.com.  
+This project is licensed under a **private license**. It is **not open source**. Unauthorized distribution, modification, or commercial use is prohibited. For inquiries about usage rights, please contact flashcardkata@gmail.com.  
