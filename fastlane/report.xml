@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000173">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="1: rm -rf ~/Library/Developer/Xcode/DerivedData/*" time="0.004855">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="2: rm -rf build" time="0.002125">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="3: xcodebuild -project /Users/th/Desktop/Developer/CodingFlashcard/FlashcardKata.xcodeproj -scheme CodingFlashcard -resolvePackageDependencies" time="15.578871">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>

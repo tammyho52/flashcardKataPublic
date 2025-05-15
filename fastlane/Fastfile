@@ -1,0 +1,26 @@
+default_platform(:ios)
+
+platform :ios do
+  lane :test do
+    sh("firebase emulators:start --only firestore,auth --project flashcard-kata > emulator.log 2>&1 &")
+    sleep(30)
+
+    scan(
+      scheme: "CodingFlashcard",
+      clean: true,
+      code_coverage: true,
+      devices: ["iPhone 15"],
+      verbose: true
+    )
+
+    sh("firebase emulators:stop")
+  end
+
+  lane :clean_cd do
+    project_dir = File.expand_path("..", __dir__) 
+
+    sh("rm -rf ~/Library/Developer/Xcode/DerivedData/*")
+    sh("rm -rf build")
+    sh("xcodebuild -project #{project_dir}/FlashcardKata.xcodeproj -scheme CodingFlashcard -resolvePackageDependencies")
+  end
+end
